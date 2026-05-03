@@ -4,5 +4,6 @@
   "workspaces": {
     "packages": ["apps/*", "packages/*", "tooling/*"]
   },
-  "ignorePatterns": ["oxfmt.config.ts"]
+  "ignorePatterns": ["oxfmt.config.ts"],
+  "ignoreDependencies": ["babel-plugin-react-compiler", "postcss-load-config"]
 }

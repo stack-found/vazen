@@ -12,7 +12,10 @@
     "fallow:dupes": "fallow dupes --format human",
     "fallow:health": "fallow health --format human",
     "fmt": "oxfmt",
-    "lint": "turbo lint"
+    "lint": "turbo lint",
+    "typecheck": "turbo typecheck",
+    "web:build": "turbo build -F web...",
+    "web:dev": "turbo dev -F web..."
   },
   "devDependencies": {
     "@commitlint/cli": "^20.5.3",

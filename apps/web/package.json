@@ -7,21 +7,22 @@
     "build": "next build",
     "clean": "rimraf .next .turbo node_modules next-env.d.ts",
     "dev": "next dev",
-    "start": "next start"
+    "start": "next start",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@repo/tsconfig": "workspace:*",
-    "next": "16.2.4",
-    "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "@repo/ui": "workspace:*",
+    "next": "catalog:next",
+    "react": "catalog:react",
+    "react-dom": "catalog:react"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
+    "@repo/tsconfig": "workspace:*",
+    "@tailwindcss/postcss": "catalog:",
+    "@types/node": "catalog:",
+    "@types/react": "catalog:react",
+    "@types/react-dom": "catalog:react",
     "babel-plugin-react-compiler": "1.0.0",
-    "tailwindcss": "^4",
     "typescript": "catalog:"
   }
 }

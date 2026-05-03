@@ -1,0 +1,11 @@
+{
+  "extends": "@repo/tsconfig/app/dom",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["dist", "build", "node_modules"]
+}
