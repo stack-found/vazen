@@ -5,6 +5,7 @@ packages:
 
 allowBuilds:
   core-js: true
+  esbuild: true
   fallow: true
   lefthook: true
   protobufjs: true
@@ -14,6 +15,8 @@ catalog:
   "@t3-oss/env-nextjs": ^0.13.11
   "@tailwindcss/postcss": ^4
   "@types/node": ^24.12.2
+  drizzle-orm: 0.45.2
+  "server-only": 0.0.1
   tailwindcss: ^4.2.4
   typescript: ^5.9.3
   zod: 4.4.2
