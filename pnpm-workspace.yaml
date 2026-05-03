@@ -4,22 +4,24 @@ packages:
   - "tooling/*"
 
 allowBuilds:
+  core-js: true
   fallow: true
   lefthook: true
+  protobufjs: true
   sharp: true
 
 catalog:
-  typescript: ^5.9.3
-  tailwindcss: ^4.2.4
-  zod: 4.4.2
   "@t3-oss/env-nextjs": ^0.13.11
   "@tailwindcss/postcss": ^4
   "@types/node": ^24.12.2
+  tailwindcss: ^4.2.4
+  typescript: ^5.9.3
+  zod: 4.4.2
 catalogs:
   next:
     next: 16.2.4
   react:
-    react: 19.2.5
-    "react-dom": 19.2.5
     "@types/react": 19.2.14
     "@types/react-dom": 19.2.3
+    react: 19.2.5
+    "react-dom": 19.2.5
