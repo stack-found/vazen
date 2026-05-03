@@ -1,0 +1,12 @@
+{
+  "name": "@repo/tsconfig",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "exports": {
+    "./app/dom": "./app/dom.json",
+    "./app/no-dom": "./app/no-dom.json",
+    "./library/dom": "./library/dom.json",
+    "./library/no-dom": "./library/no-dom.json"
+  }
+}
