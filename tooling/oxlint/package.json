@@ -1,0 +1,17 @@
+{
+  "name": "@repo/oxlint",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    "./base": "./base.js"
+  },
+  "scripts": {
+    "clean": "pnpm rimraf node_modules"
+  },
+  "devDependencies": {
+    "oxlint": "^1.62.0",
+    "oxlint-tsgolint": "^0.22.1"
+  }
+}

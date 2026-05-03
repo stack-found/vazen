@@ -2,3 +2,11 @@ commit-msg:
   commands:
     lint:commitlint:
       run: pnpm commitlint --edit {1}
+
+pre-commit:
+  parallel: true
+  commands:
+    lint:oxlint:
+      glob: "*.{js,jsx,ts,tsx}"
+      run: "pnpm lint -- --fix {staged_files}"
+      stage_fixed: true

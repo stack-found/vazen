@@ -3,11 +3,15 @@
   "private": true,
   "license": "MIT",
   "type": "module",
-  "scripts": {},
+  "scripts": {
+    "clean": "turbo clean",
+    "lint": "turbo lint"
+  },
   "devDependencies": {
     "@commitlint/cli": "^20.5.3",
     "@commitlint/config-conventional": "^20.5.3",
     "lefthook": "^2.1.6",
+    "rimraf": "^6.1.3",
     "turbo": "^2.9.8",
     "typescript": "catalog:"
   },
