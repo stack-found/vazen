@@ -9,7 +9,8 @@
     "./postcss.config": "./postcss.config.js",
     "./*": "./src/components/*.tsx",
     "./hooks": "./src/hooks/index.ts",
-    "./lib/*": "./src/lib/*.ts"
+    "./lib/*": "./src/lib/*.ts",
+    "./fonts": "./src/fonts/index.ts"
   },
   "scripts": {
     "clean": "rimraf .turbo node_modules",
@@ -30,6 +31,7 @@
     "typescript": "catalog:"
   },
   "peerDependencies": {
+    "next": "catalog:next",
     "react": "catalog:react",
     "react-dom": "catalog:react"
   }

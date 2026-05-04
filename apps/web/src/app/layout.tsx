@@ -1,19 +1,9 @@
 import type { Metadata, Viewport } from "next";
 import "@/lib/orpc/server";
-import { Geist, Geist_Mono } from "next/font/google";
 import "@/styles/globals.css";
 import { cn } from "@repo/ui/lib/utils";
 import { Providers } from "@/app/providers";
-
-const geistSans = Geist({
-  variable: "--font-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-mono",
-  subsets: ["latin"],
-});
+import { fontsVariable } from "@repo/ui/fonts";
 
 export const metadata: Metadata = {
   title: "Vazen",
@@ -48,7 +38,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={cn("antialiased", geistSans.variable, geistMono.variable, "font-sans")}>
+    <html lang="en" className={cn("antialiased", fontsVariable, "font-sans")}>
       <body>
         <Providers>{children}</Providers>
       </body>
