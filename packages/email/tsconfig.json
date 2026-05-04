@@ -1,0 +1,8 @@
+{
+  "extends": "@repo/tsconfig/app/dom",
+  "compilerOptions": {
+    "baseUrl": "."
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
