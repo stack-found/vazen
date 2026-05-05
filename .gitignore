@@ -135,6 +135,13 @@ psd
 sketch
 thumb
 
+# Playwright
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+playwright/.auth/
+
 # Storybook
 storybook-static/
 

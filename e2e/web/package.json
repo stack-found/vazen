@@ -1,0 +1,20 @@
+{
+  "name": "@e2e/web",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "clean": "rimraf .turbo .playwright node_modules playwright-report test-results",
+    "e2e": "playwright test",
+    "e2e:ci": "playwright test",
+    "e2e:debug": "playwright test --debug",
+    "e2e:headed": "playwright test --headed",
+    "e2e:report": "playwright show-report",
+    "e2e:ui": "playwright test --ui"
+  },
+  "devDependencies": {
+    "@playwright/test": "catalog:",
+    "@repo/playwright": "workspace:*",
+    "@types/node": "catalog:"
+  }
+}

@@ -12,6 +12,11 @@
       "cache": false,
       "persistent": true
     },
+    "e2e": {
+      "dependsOn": ["web#build"],
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "outputs": ["playwright-report/**", "test-results/**"]
+    },
     "typecheck": {
       "dependsOn": ["^typecheck"]
     },

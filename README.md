@@ -16,6 +16,7 @@
 - [**fallow**](https://fallow.tools) :: Dead-code analysis and project cleanup
 - [**oxfmt**](https://oxc.rs/docs/guide/usage/formatter.html) :: Opinionated code formatter
 - [**oxlint**](https://oxc.rs/docs/guide/usage/linter.html) :: Static analysis and linting
+- [**Playwright**](https://playwright.dev/) :: End-to-end testing for browser workflows
 - [**Docker**](https://www.docker.com/) :: Local development via Docker Compose
 - [**t3-oss/env-nextjs**](https://env.t3.gg/) :: Validates environment variables at build-time
 - [**Nosecone**](https://docs.arcjet.com/nosecone/quick-start) :: Security headers made simple (Arcjet’s OSS library)

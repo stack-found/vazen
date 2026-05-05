@@ -2,6 +2,7 @@ packages:
   - "apps/*"
   - "packages/*"
   - "tooling/*"
+  - "e2e/*"
 
 allowBuilds:
   "@sentry/cli": true
@@ -13,6 +14,7 @@ allowBuilds:
   sharp: true
 
 catalog:
+  "@playwright/test": ^1.59.1
   "@sentry/nextjs": 10.51.0
   "@t3-oss/env-nextjs": ^0.13.11
   "@tailwindcss/postcss": ^4

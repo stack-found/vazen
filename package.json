@@ -10,6 +10,7 @@
     "docker:clean": "docker compose down -v",
     "docker:down": "docker compose down",
     "docker:up": "docker compose up -d",
+    "e2e": "turbo e2e",
     "fallow": "fallow",
     "fallow:dead": "fallow dead-code --format human",
     "fallow:dupes": "fallow dupes --format human",
@@ -18,7 +19,8 @@
     "lint": "turbo lint",
     "typecheck": "turbo typecheck",
     "web:build": "turbo build -F web...",
-    "web:dev": "turbo dev -F web..."
+    "web:dev": "turbo dev -F web...",
+    "web:e2e": "turbo e2e -F @e2e/web"
   },
   "devDependencies": {
     "@commitlint/cli": "^20.5.3",

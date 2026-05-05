@@ -1,3 +1,8 @@
 {
-  "recommendations": ["mattpocock.ts-error-translator", "oxc.oxc-vscode", "bradlc.vscode-tailwindcss"]
+  "recommendations": [
+    "mattpocock.ts-error-translator",
+    "oxc.oxc-vscode",
+    "bradlc.vscode-tailwindcss",
+    "ms-playwright.playwright"
+  ]
 }
