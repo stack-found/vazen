@@ -37,7 +37,7 @@ always prefer multiple safe steps over a single risky change.
 1. classify the change as additive or destructive
 2. map all affected read paths, write paths, jobs, scripts and admin tools
 3. identify any required data backfill or cleanup
-4. update the prisma schema (or equivalent)
+4. update the database schema
 5. run `pnpm db:generate`
 6. review the generated sql migration in full
 7. apply migration using `pnpm db:migrate`
