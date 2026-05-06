@@ -1,3 +1,3 @@
 # telemetry
 
-- monitoring + observability
+- monitoring + observability + logging

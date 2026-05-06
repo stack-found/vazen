@@ -36,6 +36,7 @@
 - [**React Email**](https://react.email/) :: React-based email templates
 - [**PostHog**](https://posthog.com/) :: Web analytics
 - [**Sentry**](https://sentry.io/) :: Error monitoring & logging
+- [**Evlog**](https://evlog.dev) :: Simple logs, wide events, and structured logging
 
 ### License
 

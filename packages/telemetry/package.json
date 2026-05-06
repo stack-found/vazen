@@ -10,7 +10,9 @@
     "./sentry/with-sentry": "./src/sentry/with-sentry.ts",
     "./sentry/client": "./src/sentry/client.ts",
     "./sentry/edge": "./src/sentry/edge.config.ts",
-    "./sentry/server": "./src/sentry/server.config.ts"
+    "./sentry/server": "./src/sentry/server.config.ts",
+    "./evlog": "./src/evlog/index.ts",
+    "./evlog/next": "./src/evlog/next.ts"
   },
   "scripts": {
     "clean": "rimraf node_modules .turbo",
@@ -19,6 +21,7 @@
   "dependencies": {
     "@sentry/nextjs": "catalog:",
     "@t3-oss/env-nextjs": "catalog:",
+    "evlog": "^2.16.0",
     "zod": "catalog:"
   },
   "devDependencies": {
