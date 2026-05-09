@@ -6,7 +6,8 @@
   "scripts": {
     "build": "next build",
     "clean": "rimraf .next .turbo node_modules next-env.d.ts",
-    "dev": "next dev",
+    "dev": "portless",
+    "dev:app": "next dev",
     "start": "next start",
     "typecheck": "tsc --noEmit"
   },
@@ -38,5 +39,9 @@
     "@types/react-dom": "catalog:react",
     "babel-plugin-react-compiler": "1.0.0",
     "typescript": "catalog:"
+  },
+  "portless": {
+    "name": "web.vazen",
+    "script": "dev:app"
   }
 }

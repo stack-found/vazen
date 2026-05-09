@@ -6,7 +6,8 @@
   "scripts": {
     "build": "next build",
     "clean": "rimraf .next .source .turbo node_modules",
-    "dev": "next dev",
+    "dev": "portless",
+    "dev:docs": "next dev",
     "postinstall": "fumadocs-mdx",
     "start": "next start",
     "typecheck": "fumadocs-mdx && tsc --noEmit"
@@ -30,5 +31,9 @@
     "@types/react": "catalog:react",
     "@types/react-dom": "catalog:react",
     "typescript": "catalog:"
+  },
+  "portless": {
+    "name": "docs.vazen",
+    "script": "dev:docs"
   }
 }
