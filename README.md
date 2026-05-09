@@ -11,6 +11,7 @@
 ### Dev Toolkit
 
 - [**pnpm**](https://pnpm.io) :: Fast, disk-efficient package manager
+- [**portless**](https://portless.sh) :: Clean local hostnames for app development
 - [**commitlint**](https://commitlint.js.org/) :: Enforces Conventional Commits
 - [**lefthook**](https://lefthook.dev/) :: Fast Git hooks (pre-commit, pre-push, etc.)
 - [**fallow**](https://fallow.tools) :: Dead-code analysis and project cleanup
@@ -20,6 +21,12 @@
 - [**Docker**](https://www.docker.com/) :: Local development via Docker Compose
 - [**t3-oss/env-nextjs**](https://env.t3.gg/) :: Validates environment variables at build-time
 - [**Nosecone**](https://docs.arcjet.com/nosecone/quick-start) :: Security headers made simple (Arcjet’s OSS library)
+
+### Portless
+
+- Local development uses [**Portless**](https://portless.sh/) so each app can run behind a clean hostname instead of a raw `localhost:<port>` URL.
+- Current local hosts :: `web.vazen.localhost` and `docs.vazen.localhost`
+- The `dev` scripts inside [`apps/web/package.json`](apps/web/package.json) and [`apps/docs/package.json`](apps/docs/package.json) are wired to Portless.
 
 ### Tech Stack
 
