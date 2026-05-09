@@ -7,7 +7,7 @@
   "rangeStrategy": "bump",
   "baseBranches": ["dev"],
   "postUpdateOptions": ["pnpmDedupe"],
-  "schedule": ["after 9am and before 5pm on weekdays"],
+  "schedule": ["after 9am and before 5pm on weekday"],
   "labels": ["dependencies"],
   "vulnerabilityAlerts": {
     "enabled": true,
