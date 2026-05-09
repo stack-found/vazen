@@ -1,0 +1,79 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "$comments": {
+    "extends": "recommended base + semantic commits + known monorepo package groupings",
+    "rangeStrategy": "bump rewrites the pinned version in package.json, not just the lockfile",
+    "postUpdateOptions": "runs pnpm dedupe after every update to collapse duplicate transitive deps",
+    "schedule": "creates PRs during business hours only :: prevents off-hours dashboard floods",
+    "prConcurrentLimit": "max open Renovate PRs at any time",
+    "prHourlyLimit": "max new PRs per hour per run",
+    "lockFileMaintenance": "weekly full pnpm install to catch indirect dep drift; pnpmDedupe also runs here",
+    "minimumReleaseAge": "cooldown before acting :: lets the ecosystem catch yanked or broken releases"
+  },
+  "extends": ["config:recommended", ":semanticCommits", "group:monorepos", "group:recommended"],
+  "dependencyDashboard": true,
+  "prConcurrentLimit": 10,
+  "prHourlyLimit": 5,
+  "rangeStrategy": "bump",
+  "baseBranches": ["dev"],
+  "postUpdateOptions": ["pnpmDedupe"],
+  "schedule": ["after 9am and before 5pm on weekdays"],
+  "labels": ["dependencies"],
+  "vulnerabilityAlerts": {
+    "enabled": true,
+    "schedule": ["at any time"],
+    "labels": ["security", "dependencies"]
+  },
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": false,
+    "schedule": ["before 5am on Monday"]
+  },
+  "packageRules": [
+    {
+      "description": "patch :: group all, automerge via platform merge queue after 3-day cooldown",
+      "groupName": "All patch updates",
+      "matchUpdateTypes": ["patch"],
+      "minimumReleaseAge": "3 days",
+      "automerge": true,
+      "platformAutomerge": true,
+      "labels": ["dependencies", "automerge"]
+    },
+    {
+      "description": "dev minor :: automerge but not via platform :: allows sanity check on e.g. new lint rules",
+      "groupName": "Dev dependency minor updates",
+      "matchDepTypes": ["devDependencies"],
+      "matchUpdateTypes": ["minor"],
+      "minimumReleaseAge": "3 days",
+      "automerge": true,
+      "platformAutomerge": false,
+      "labels": ["dependencies", "dev", "automerge"]
+    },
+    {
+      "description": "prod minor :: PR only, 5-day cooldown :: behavioral changes may affect users",
+      "groupName": "Production dependency minor updates",
+      "matchDepTypes": ["dependencies"],
+      "matchUpdateTypes": ["minor"],
+      "minimumReleaseAge": "5 days",
+      "automerge": false,
+      "labels": ["dependencies", "minor"]
+    },
+    {
+      "description": "major :: manual review required, deprioritized in dashboard",
+      "matchUpdateTypes": ["major"],
+      "dependencyDashboardApproval": true,
+      "automerge": false,
+      "groupName": "Major version updates",
+      "labels": ["dependencies", "major", "breaking-change"],
+      "prPriority": -1
+    },
+    {
+      "description": "pnpm catalog :: exact pins have no range so replace is used instead of bump",
+      "matchManagers": ["pnpm"],
+      "matchDepTypes": ["pnpmCatalog"],
+      "rangeStrategy": "replace",
+      "automerge": false,
+      "labels": ["dependencies", "catalog"]
+    }
+  ]
+}
