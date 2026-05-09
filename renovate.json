@@ -27,7 +27,7 @@
       "minimumReleaseAge": "3 days",
       "automerge": true,
       "platformAutomerge": true,
-      "labels": ["dependencies", "automerge"]
+      "labels": ["dependencies", "patch", "automerge"]
     },
     {
       "description": "dev minor :: automerge but not via platform :: allows sanity check on e.g. new lint rules",
