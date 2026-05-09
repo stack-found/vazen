@@ -14,3 +14,7 @@ pre-commit:
       glob: "*.{js,jsx,ts,tsx}"
       run: "pnpm lint -- --fix {staged_files}"
       stage_fixed: true
+    deps:renovate:
+      glob: "renovate.json|.github/renovate.json"
+      run: npx --yes --package renovate -- renovate-config-validator --strict {staged_files}
+      stage_fixed: true
