@@ -5,9 +5,9 @@
   "prConcurrentLimit": 10,
   "prHourlyLimit": 5,
   "rangeStrategy": "bump",
-  "baseBranches": ["dev"],
+  "baseBranchPatterns": ["dev"],
   "postUpdateOptions": ["pnpmDedupe"],
-  "schedule": ["after 9am and before 5pm on weekday"],
+  "schedule": ["after 9am every weekday", "before 5am every weekday"],
   "labels": ["dependencies"],
   "vulnerabilityAlerts": {
     "enabled": true,
