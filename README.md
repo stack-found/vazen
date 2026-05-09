@@ -22,12 +22,6 @@
 - [**t3-oss/env-nextjs**](https://env.t3.gg/) :: Validates environment variables at build-time
 - [**Nosecone**](https://docs.arcjet.com/nosecone/quick-start) :: Security headers made simple (Arcjet’s OSS library)
 
-### Portless
-
-- Local development uses [**Portless**](https://portless.sh/) so each app can run behind a clean hostname instead of a raw `localhost:<port>` URL.
-- Current local hosts :: `web.vazen.localhost` and `docs.vazen.localhost`
-- The `dev` scripts inside [`apps/web/package.json`](apps/web/package.json) and [`apps/docs/package.json`](apps/docs/package.json) are wired to Portless.
-
 ### Tech Stack
 
 - [**Next.js v16**](https://nextjs.org/) :: React framework with app router
@@ -38,12 +32,24 @@
 - [**Tanstack Query**](https://tanstack.com/query/latest) :: Data fetching and caching
 - [**PostgreSQL**](https://postgresql.org/) :: Primary database
 - [**Upstash**](https://upstash.com) :: Severless redis
-- [**Drizzle ORM**](https://orm.drizzle.team/) :: Type-safe queries + Cloudflare Hyperdrive integration (cached, geo-distributed reads)
+- [**Drizzle ORM**](https://orm.drizzle.team/) :: Sequel (SQL) Statement Builder
 - [**Better-Auth**](https://better-auth.com/) :: Comprehensive authentication framework
 - [**React Email**](https://react.email/) :: React-based email templates
 - [**PostHog**](https://posthog.com/) :: Web analytics
 - [**Sentry**](https://sentry.io/) :: Error monitoring & logging
 - [**Evlog**](https://evlog.dev) :: Simple logs, wide events, and structured logging
+
+## Local Development
+
+- Uses [**portless**](https://portless.sh/) :: apps run on clean hostnames instead of raw ports.
+- Local hosts: `web.vazen.localhost` and `docs.vazen.localhost`
+- Dev scripts in [`apps/web/package.json`](apps/web/package.json) and [`apps/docs/package.json`](apps/docs/package.json) are wired to portless.
+
+**Local hosts:**
+- `web.vazen.localhost`
+- `docs.vazen.localhost`
+
+The `dev` scripts inside [`apps/web/package.json`](apps/web/package.json) and [`apps/docs/package.json`](apps/docs/package.json) are wired to portless.
 
 ### License
 
