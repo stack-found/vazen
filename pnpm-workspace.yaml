@@ -21,7 +21,7 @@ catalog:
   "@types/node": ^24.12.2
   drizzle-orm: 0.45.2
   "server-only": 0.0.1
-  tailwindcss: ^4.2.4
+  tailwindcss: ^4.3.0
   typescript: ^5.9.3
   zod: 4.4.3
   motion: ^12.38.0
