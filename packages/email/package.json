@@ -15,11 +15,11 @@
     "@t3-oss/env-nextjs": "catalog:",
     "react": "catalog:react",
     "react-dom": "catalog:react",
-    "react-email": "^6.0.8",
+    "react-email": "^6.1.1",
     "zod": "catalog:"
   },
   "devDependencies": {
-    "@react-email/ui": "^6.0.8",
+    "@react-email/ui": "^6.1.1",
     "@repo/tsconfig": "workspace:*",
     "@types/react": "catalog:react",
     "@types/react-dom": "catalog:react",
