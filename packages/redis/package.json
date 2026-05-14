@@ -15,7 +15,7 @@
   "dependencies": {
     "@t3-oss/env-nextjs": "catalog:",
     "@upstash/ratelimit": "^2.0.8",
-    "@upstash/redis": "^1.37.0",
+    "@upstash/redis": "^1.38.0",
     "zod": "catalog:"
   },
   "devDependencies": {
