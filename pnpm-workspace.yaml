@@ -27,7 +27,7 @@ catalog:
   zod: 4.4.3
 catalogs:
   auth:
-    "@better-auth/infra": 0.2.6
+    "@better-auth/infra": 0.2.7
     better-auth: 1.6.10
   next:
     next: 16.2.6
@@ -41,5 +41,5 @@ catalogs:
     react: 19.2.6
     "react-dom": 19.2.6
   tanstack:
-    "@tanstack/react-query": ^5.100.9
-    "@tanstack/react-query-devtools": ^5.100.9
+    "@tanstack/react-query": ^5.100.10
+    "@tanstack/react-query-devtools": ^5.100.10
