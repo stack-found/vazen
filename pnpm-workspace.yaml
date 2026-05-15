@@ -32,9 +32,9 @@ catalogs:
   next:
     next: 16.2.6
   orpc:
-    "@orpc/client": 1.14.2
-    "@orpc/server": 1.14.2
-    "@orpc/tanstack-query": 1.14.2
+    "@orpc/client": 1.14.3
+    "@orpc/server": 1.14.3
+    "@orpc/tanstack-query": 1.14.3
   react:
     "@types/react": 19.2.14
     "@types/react-dom": 19.2.3
