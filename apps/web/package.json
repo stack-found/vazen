@@ -41,7 +41,7 @@
     "typescript": "catalog:"
   },
   "portless": {
-    "name": "web.vazen",
+    "name": "local.web.vazen",
     "script": "dev:app"
   }
 }
