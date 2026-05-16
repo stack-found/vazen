@@ -42,14 +42,14 @@
 ## Local Development
 
 - Uses [**portless**](https://portless.sh/) :: apps run on clean hostnames instead of raw ports.
-- Local hosts: `web.vazen.localhost` and `docs.vazen.localhost`
+- Local hosts: `https://local.web.vazen.id` and `https://local.docs.vazen.id`
+- We use `.id` instead of `.localhost` because auth clients and OAuth providers such as Google can reject `.localhost` redirect URLs during local development.
 - Dev scripts in [`apps/web/package.json`](apps/web/package.json) and [`apps/docs/package.json`](apps/docs/package.json) are wired to portless.
 
 **Local hosts:**
-- `web.vazen.localhost`
-- `docs.vazen.localhost`
 
-The `dev` scripts inside [`apps/web/package.json`](apps/web/package.json) and [`apps/docs/package.json`](apps/docs/package.json) are wired to portless.
+- `https://local.web.vazen.id`
+- `https://local.docs.vazen.id`
 
 ### License
 
