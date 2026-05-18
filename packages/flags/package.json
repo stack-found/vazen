@@ -1,0 +1,37 @@
+{
+  "name": "@repo/flags",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "imports": {
+    "#env": "./env.ts"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": {
+      "default": "./src/*.ts"
+    },
+    "./feature": "./src/feature/index.ts",
+    "./env": "./env.ts"
+  },
+  "scripts": {
+    "clean": "rimraf .turbo node_modules",
+    "typecheck": "tsc --noEmit --emitDeclarationOnly false"
+  },
+  "dependencies": {
+    "@flags-sdk/statsig": "^0.2.5",
+    "@repo/auth": "workspace:*",
+    "@t3-oss/env-nextjs": "catalog:",
+    "flags": "^4.0.6",
+    "nanoid": "^5.1.11",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@repo/tsconfig": "workspace:*",
+    "@types/node": "catalog:",
+    "typescript": "catalog:"
+  },
+  "peerDependencies": {
+    "next": "catalog:next"
+  }
+}
