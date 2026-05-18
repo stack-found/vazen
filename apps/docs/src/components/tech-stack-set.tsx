@@ -51,6 +51,10 @@ const stacks = [
     stackName: "React Email",
   },
   {
+    icon: <Icons.Statsig className="size-4" />,
+    stackName: "Statsig",
+  },
+  {
     icon: <Icons.Sentry className="size-4" />,
     stackName: "Sentry",
   },

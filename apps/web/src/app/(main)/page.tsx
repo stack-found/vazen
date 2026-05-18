@@ -1,10 +1,15 @@
 import APIHealth from "@/components/api-health";
+import { bannerFlag } from "@repo/flags/feature";
 import { Button } from "@repo/ui/button";
+import { Suspense } from "react";
 
 export default function Page() {
   return (
     <>
-      <div className="flex min-h-svh p-6">
+      <Suspense>
+        <Banner />
+      </Suspense>
+      <div className="flex p-6">
         <div className="flex flex-col gap-4 text-sm">
           <div className="space-y-2">
             <h1 className="font-asul text-3xl font-medium">Vazen</h1>
@@ -20,4 +25,22 @@ export default function Page() {
       </div>
     </>
   );
+}
+
+async function Banner() {
+  const isBannerEnabled = await bannerFlag();
+
+  if (isBannerEnabled) {
+    return (
+      <>
+        <div className="bg-black py-1 text-center text-sm text-white">
+          <p>
+            Banner enabled by feature flag: <code>enable_banner_flag</code>
+          </p>
+        </div>
+      </>
+    );
+  }
+
+  return null;
 }

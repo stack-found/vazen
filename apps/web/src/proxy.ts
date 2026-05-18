@@ -3,6 +3,7 @@ import { createNEMO } from "@rescale/nemo";
 import { securityHeadersMiddleware, securityHeadersOptions } from "@repo/security/security-headers";
 import type { MiddlewareConfig } from "@rescale/nemo";
 import { getSessionCookie } from "@/lib/auth/session";
+import { getStableId } from "@repo/flags/lib/stable-id";
 const securityHeaders = securityHeadersMiddleware(securityHeadersOptions);
 
 const middlewares = {
@@ -15,6 +16,23 @@ const middlewares = {
       securityResponse.headers.forEach((value, key) => {
         response.headers.set(key, value);
       });
+
+      return response;
+    },
+    // Stable ID for feature flags
+    async () => {
+      const stableId = await getStableId();
+      const response = NextResponse.next();
+
+      if (stableId.isFresh) {
+        response.cookies.set("stable-id", stableId.value, {
+          httpOnly: true,
+          secure: process.env.NODE_ENV === "production",
+          sameSite: "lax",
+          maxAge: 60 * 60 * 24 * 365, // 1 year
+        });
+        response.headers.set("x-generated-stable-id", stableId.value);
+      }
 
       return response;
     },

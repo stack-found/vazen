@@ -17,6 +17,7 @@
     "@orpc/tanstack-query": "catalog:orpc",
     "@repo/analytics": "workspace:*",
     "@repo/auth": "workspace:*",
+    "@repo/flags": "workspace:*",
     "@repo/rpc": "workspace:*",
     "@repo/security": "workspace:*",
     "@repo/telemetry": "workspace:*",
