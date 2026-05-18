@@ -1,6 +1,7 @@
 import { cache } from "react";
 import { headers } from "next/headers";
 import { auth } from "@repo/auth/server";
+import { getSessionCookie as BAGetSessionCookie } from "better-auth/cookies";
 
 export const getServerSession = cache(async () => {
   try {
@@ -13,3 +14,6 @@ export const getServerSession = cache(async () => {
     return null;
   }
 });
+
+export const getSessionCookie = (request: Parameters<typeof BAGetSessionCookie>[0]) =>
+  BAGetSessionCookie(request, { cookiePrefix: "vazen" });
