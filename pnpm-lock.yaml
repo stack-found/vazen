@@ -296,7 +296,7 @@ importers:
         specifier: 'catalog:'
         version: 0.13.11(typescript@5.9.3)(zod@4.4.3)
       posthog-js:
-        specifier: ^1.373.4
+        specifier: ^1.373.5
         version: 1.373.5
       zod:
         specifier: 'catalog:'
@@ -588,7 +588,7 @@ importers:
   tooling/oxlint:
     devDependencies:
       oxlint:
-        specifier: ^1.64.0
+        specifier: ^1.65.0
         version: 1.65.0(oxlint-tsgolint@0.22.1)
       oxlint-tsgolint:
         specifier: ^0.22.1
