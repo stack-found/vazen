@@ -35,6 +35,7 @@
 - [**Drizzle ORM**](https://orm.drizzle.team/) :: Sequel (SQL) Statement Builder
 - [**Better-Auth**](https://better-auth.com/) :: Comprehensive authentication framework
 - [**React Email**](https://react.email/) :: React-based email templates
+- [**Statsig**](https://www.statsig.com/) :: Feature flags
 - [**PostHog**](https://posthog.com/) :: Web analytics
 - [**Sentry**](https://sentry.io/) :: Error monitoring & logging
 - [**Evlog**](https://evlog.dev) :: Simple logs, wide events, and structured logging
