@@ -1,0 +1,28 @@
+{
+  "name": "@repo/storage",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "imports": {
+    "#env": "./env.ts"
+  },
+  "exports": {
+    "./*": "./src/index.ts"
+  },
+  "scripts": {
+    "clean": "rimraf node_modules .turbo",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1049.0",
+    "@aws-sdk/s3-presigned-post": "^3.1049.0",
+    "@aws-sdk/s3-request-presigner": "^3.1049.0",
+    "@t3-oss/env-nextjs": "catalog:",
+    "files-sdk": "^1.4.0",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@repo/tsconfig": "workspace:*",
+    "typescript": "catalog:"
+  }
+}

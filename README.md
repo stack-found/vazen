@@ -32,6 +32,7 @@
 - [**Tanstack Query**](https://tanstack.com/query/latest) :: Data fetching and caching
 - [**PostgreSQL**](https://postgresql.org/) :: Primary database
 - [**Upstash**](https://upstash.com) :: Severless redis
+- [**Cloudflare R2**](https://www.cloudflare.com/developer-platform/r2/) :: S3-compatible object storage via `files-sdk`
 - [**Drizzle ORM**](https://orm.drizzle.team/) :: Sequel (SQL) Statement Builder
 - [**Better-Auth**](https://better-auth.com/) :: Comprehensive authentication framework
 - [**React Email**](https://react.email/) :: React-based email templates
