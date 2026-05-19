@@ -3,12 +3,16 @@ import { StackPill } from "./ui/stack-pill";
 
 const stacks = [
   {
-    icon: <Icons.Nextjs className="size-4" />,
-    stackName: "Next.js",
+    icon: <Icons.Typescript className="size-4" />,
+    stackName: "Typescript",
   },
   {
     icon: <Icons.Reactjs className="size-4" />,
     stackName: "React.js",
+  },
+  {
+    icon: <Icons.Nextjs className="size-4" />,
+    stackName: "Next.js",
   },
   {
     icon: <Icons.TailwindCSS className="size-4" />,
@@ -23,10 +27,6 @@ const stacks = [
     stackName: "Posthog",
   },
   {
-    icon: <Icons.Typescript className="size-4" />,
-    stackName: "Typescript",
-  },
-  {
     icon: <Icons.ORPC className="size-4" />,
     stackName: "oRPC",
   },
@@ -34,14 +34,18 @@ const stacks = [
     icon: <Icons.Postgres className="size-4" />,
     stackName: "PostgreSQL",
   },
-  // {
-  //   icon: <Icons.Polar className="size-4" />,
-  //   stackName: "Polar",
-  // },
   {
     icon: <Icons.Drizzle className="size-4" />,
     stackName: "Drizzle ORM",
   },
+  {
+    icon: <Icons.CloudflareR2 className="size-4" />,
+    stackName: "Cloudflare R2",
+  },
+  // {
+  //   icon: <Icons.Polar className="size-4" />,
+  //   stackName: "Polar",
+  // },
   {
     icon: <Icons.BetterAuth className="size-4" />,
     stackName: "Better Auth",
@@ -71,9 +75,10 @@ const stacks = [
   //   stackName: "c15t",
   // },
 ];
+
 export default function TechStackSet() {
   return (
-    <div className="mx-auto flex max-w-[780px] flex-wrap items-center justify-center gap-4">
+    <div className="mx-auto flex max-w-[880px] flex-wrap items-center justify-center gap-4">
       {stacks.map((stack, idx) => {
         return <StackPill key={idx} icon={stack.icon} stackName={stack.stackName} />;
       })}
