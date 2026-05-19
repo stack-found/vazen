@@ -7,7 +7,8 @@
     "#env": "./env.ts"
   },
   "exports": {
-    "./*": "./src/index.ts"
+    ".": "./src/index.ts",
+    "./*": "./src/*"
   },
   "scripts": {
     "clean": "rimraf node_modules .turbo",
