@@ -1,8 +1,8 @@
 import { createEnv } from "@t3-oss/env-nextjs";
 import { z } from "zod";
 
-export const env = () => {
-  return createEnv({
+export const env = () =>
+  createEnv({
     client: {
       NEXT_PUBLIC_SENTRY_DSN: z.url(),
     },
@@ -14,4 +14,3 @@ export const env = () => {
       NEXT_PUBLIC_SENTRY_DSN: process.env.NEXT_PUBLIC_SENTRY_DSN,
     },
   });
-};

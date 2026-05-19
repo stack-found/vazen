@@ -8,7 +8,5 @@ export const env = () =>
     server: {
       DATABASE_URL: z.url(),
     },
-    runtimeEnv: {
-      DATABASE_URL: process.env.DATABASE_URL,
-    },
+    experimental__runtimeEnv: process.env,
   });

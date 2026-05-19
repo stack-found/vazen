@@ -7,8 +7,5 @@ export const env = () =>
       UPSTASH_REDIS_REST_URL: z.url(),
       UPSTASH_REDIS_REST_TOKEN: z.string().min(1),
     },
-    runtimeEnv: {
-      UPSTASH_REDIS_REST_URL: process.env.UPSTASH_REDIS_REST_URL,
-      UPSTASH_REDIS_REST_TOKEN: process.env.UPSTASH_REDIS_REST_TOKEN,
-    },
+    experimental__runtimeEnv: process.env,
   });
