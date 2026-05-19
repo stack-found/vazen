@@ -92,7 +92,7 @@ importers:
         specifier: 'catalog:'
         version: 24.12.4
       fallow:
-        specifier: ^2.74.0
+        specifier: ^2.75.0
         version: 2.75.0
       lefthook:
         specifier: ^2.1.6
@@ -262,10 +262,10 @@ importers:
   packages/ai:
     dependencies:
       '@ai-sdk/react':
-        specifier: ^3.0.185
+        specifier: ^3.0.186
         version: 3.0.186(react@19.2.6)(zod@4.4.3)
       ai:
-        specifier: ^6.0.183
+        specifier: ^6.0.184
         version: 6.0.184(zod@4.4.3)
       react:
         specifier: catalog:react
