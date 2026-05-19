@@ -28,7 +28,7 @@
     "@commitlint/cli": "^20.5.3",
     "@commitlint/config-conventional": "^20.5.3",
     "@types/node": "catalog:",
-    "fallow": "^2.74.0",
+    "fallow": "^2.75.0",
     "lefthook": "^2.1.6",
     "oxfmt": "^0.50.0",
     "portless": "^0.13.0",
