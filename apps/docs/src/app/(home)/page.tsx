@@ -52,7 +52,7 @@ export default function HomePage() {
             <span className="absolute right-0 bottom-0 size-2 translate-x-1/2 translate-y-1/2 rounded-full bg-black dark:bg-white" />
             <CirclePattern />
             <div className="flex flex-col items-center gap-8 pt-15.5">
-              <h1 className="text-md max-w-[330px] text-center text-neutral-600 md:max-w-[380px] md:text-lg dark:text-neutral-200">
+              <h1 className="max-w-[330px] text-center text-base text-neutral-600 md:max-w-[380px] md:text-lg dark:text-neutral-200">
                 Built with trusted tools powering the modern full-stack web ecosystem
               </h1>
               <TechStackSet />
