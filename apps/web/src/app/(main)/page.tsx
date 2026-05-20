@@ -14,7 +14,7 @@ export default function Page() {
           <div className="space-y-2">
             <h1 className="font-asul text-3xl font-medium">Vazen</h1>
             <p className="max-w-xs min-w-0">
-              A strict monorepo starter to kickstart projects, ideas, and experiments.
+              The production-grade starter kit for modern full-stack applications
             </p>
             <div className="flex items-center gap-3">
               <Button>Button</Button>

@@ -15,7 +15,7 @@ export default function HomePage() {
               transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
               className="text-start text-2xl text-balance"
             >
-              A production-grade monorepo starter for building full-stack applications
+              The production-grade starter kit for modern full-stack applications
             </motion.h1>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -51,9 +51,9 @@ export default function HomePage() {
             <span className="absolute bottom-0 left-0 size-2 -translate-x-1/2 translate-y-1/2 rounded-full bg-black dark:bg-white" />
             <span className="absolute right-0 bottom-0 size-2 translate-x-1/2 translate-y-1/2 rounded-full bg-black dark:bg-white" />
             <CirclePattern />
-            <div className="space-y-8 pt-15.5">
-              <h1 className="text-center text-2xl text-neutral-600 dark:text-neutral-200">
-                Production-ready stack, optimized for scale
+            <div className="flex flex-col items-center gap-8 pt-15.5">
+              <h1 className="text-md max-w-[330px] text-center text-neutral-600 md:max-w-[380px] md:text-lg dark:text-neutral-200">
+                Built with trusted tools powering the modern full-stack web ecosystem
               </h1>
               <TechStackSet />
             </div>
