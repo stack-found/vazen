@@ -1,0 +1,10 @@
+{
+  "extends": "@repo/tsconfig/library/no-dom",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "exclude": ["node_modules"]
+}

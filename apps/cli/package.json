@@ -1,0 +1,36 @@
+{
+  "name": "vazen",
+  "version": "0.0.1",
+  "private": false,
+  "license": "MIT",
+  "bin": {
+    "vazen": "./dist/index.mjs"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "main": "./dist/index.mjs",
+  "scripts": {
+    "build": "tsdown",
+    "clean": "rimraf dist .turbo",
+    "dev": "tsdown -w",
+    "link": "pnpm link --global",
+    "prepack": "pnpm build",
+    "relink": "pnpm uninstall --global vazen && pnpm link --global",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@orpc/server": "catalog:orpc",
+    "trpc-cli": "^0.14.1",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@repo/tsconfig": "workspace:*",
+    "tsdown": "^0.22.0",
+    "typescript": "catalog:"
+  },
+  "engines": {
+    "node": ">=22.22.3"
+  }
+}
