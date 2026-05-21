@@ -53,5 +53,14 @@ const middlewares = {
 export const proxy = createNEMO(middlewares);
 
 export const config = {
-  matcher: ["/((?!_next/|_static|[\\w-]+\\.\\w+).*)"],
+  matcher: [
+    /*
+     * Match all request paths except:
+     * - _next/static (static files)
+     * - _next/image (image optimization)
+     * - favicon.ico, sitemap.xml, robots.txt (metadata files)
+     * - Public assets (images, fonts, etc.)
+     */
+    "/((?!_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico|woff|woff2|ttf|eot)$).*)",
+  ],
 };
