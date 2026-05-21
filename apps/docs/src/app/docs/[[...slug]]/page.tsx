@@ -1,4 +1,4 @@
-import { getPageImage, source } from "@/lib/source";
+import { getPageImage, source } from "@/lib/fuma/source";
 import { DocsBody, DocsDescription, DocsPage, DocsTitle } from "fumadocs-ui/layouts/docs/page";
 import { notFound } from "next/navigation";
 import { getMDXComponents } from "@/mdx-components";
