@@ -7,8 +7,8 @@
   "exports": {
     "./globals.css": "./src/styles/globals.css",
     "./postcss.config": "./postcss.config.js",
-    "./*": "./src/components/*.tsx",
-    "./hooks": "./src/hooks/index.ts",
+    "./components/*": "./src/components/*.tsx",
+    "./hooks": "./src/hooks/*.ts",
     "./lib/*": "./src/lib/*.ts",
     "./fonts": "./src/fonts/index.ts"
   },
@@ -25,9 +25,11 @@
   },
   "devDependencies": {
     "@repo/tsconfig": "workspace:*",
+    "@tailwindcss/postcss": "catalog:",
     "@types/node": "catalog:",
     "@types/react": "catalog:react",
     "@types/react-dom": "catalog:react",
+    "tailwindcss": "catalog:",
     "typescript": "catalog:"
   },
   "peerDependencies": {

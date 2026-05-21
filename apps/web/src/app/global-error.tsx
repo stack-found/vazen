@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import { fontsVariable } from "@repo/ui/fonts";
-import { Button } from "@repo/ui/button";
+import { Button } from "@repo/ui/components/button";
 import * as Sentry from "@sentry/nextjs";
 
 interface GlobalErrorProps {

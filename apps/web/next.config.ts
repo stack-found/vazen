@@ -9,6 +9,7 @@ const nextConfig: NextConfig = {
   transpilePackages: ["@repo/ui"],
   allowedDevOrigins: ["local.web.vazen.id", "*.local.web.vazen.id"],
 };
+
 const NextApp = () => {
   const plugins = [withSentry];
   return plugins.reduce((config, plugin) => plugin(config), nextConfig);

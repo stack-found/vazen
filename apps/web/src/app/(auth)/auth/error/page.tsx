@@ -3,7 +3,7 @@
 import { Suspense } from "react";
 import Link from "next/link";
 import { parseAsString, useQueryState } from "nuqs";
-import { Button } from "@repo/ui/button";
+import { Button } from "@repo/ui/components/button";
 
 const ERROR_MESSAGES: Record<string, { title: string; description: string }> = {
   account_already_linked_to_different_user: {

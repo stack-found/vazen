@@ -1,6 +1,6 @@
 import APIHealth from "@/components/api-health";
 import { bannerFlag } from "@repo/flags/feature";
-import { Button } from "@repo/ui/button";
+import { Button } from "@repo/ui/components/button";
 import { Suspense } from "react";
 
 export default function Page() {
