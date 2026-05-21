@@ -32,6 +32,7 @@
     "react-dom": "catalog:react"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "catalog:next",
     "@repo/tsconfig": "workspace:*",
     "@tailwindcss/postcss": "catalog:",
     "@tanstack/react-query-devtools": "catalog:tanstack",
