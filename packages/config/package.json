@@ -1,0 +1,31 @@
+{
+  "name": "@repo/config",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "imports": {
+    "#app": "./src/app/index.ts"
+  },
+  "exports": {
+    "./app": "./src/app/index.ts",
+    "./seo": "./src/seo/index.ts"
+  },
+  "scripts": {
+    "clean": "rimraf node_modules turbo",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "schema-dts": "^2.0.0"
+  },
+  "devDependencies": {
+    "@repo/tsconfig": "workspace:*",
+    "@types/react": "catalog:react",
+    "@types/react-dom": "catalog:react",
+    "typescript": "catalog:"
+  },
+  "peerDependencies": {
+    "next": "catalog:next",
+    "react": "catalog:react",
+    "react-dom": "catalog:react"
+  }
+}
