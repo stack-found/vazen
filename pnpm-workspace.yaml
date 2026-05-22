@@ -37,7 +37,7 @@ catalogs:
     "@orpc/server": 1.14.3
     "@orpc/tanstack-query": 1.14.3
   react:
-    "@types/react": 19.2.14
+    "@types/react": 19.2.15
     "@types/react-dom": 19.2.3
     react: 19.2.6
     "react-dom": 19.2.6
