@@ -11,7 +11,7 @@
     "clean": "pnpm rimraf node_modules"
   },
   "devDependencies": {
-    "oxlint": "^1.65.0",
+    "oxlint": "^1.66.0",
     "oxlint-tsgolint": "^0.23.0"
   }
 }
