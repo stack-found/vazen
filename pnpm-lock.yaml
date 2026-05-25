@@ -98,7 +98,7 @@ importers:
         specifier: 'catalog:'
         version: 24.12.4
       fallow:
-        specifier: ^2.76.0
+        specifier: ^2.77.0
         version: 2.78.0
       lefthook:
         specifier: ^2.1.8
@@ -271,10 +271,10 @@ importers:
   packages/ai:
     dependencies:
       '@ai-sdk/react':
-        specifier: ^3.0.187
+        specifier: ^3.0.192
         version: 3.0.192(react@19.2.6)(zod@4.4.3)
       ai:
-        specifier: ^6.0.185
+        specifier: ^6.0.190
         version: 6.0.190(zod@4.4.3)
       react:
         specifier: catalog:react
@@ -439,7 +439,7 @@ importers:
         version: 4.4.3
     devDependencies:
       '@react-email/ui':
-        specifier: ^6.1.5
+        specifier: ^6.3.0
         version: 6.3.0(@opentelemetry/api@1.9.1)(@playwright/test@1.60.0)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       '@repo/tsconfig':
         specifier: workspace:*
