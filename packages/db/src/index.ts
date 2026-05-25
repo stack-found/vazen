@@ -12,7 +12,7 @@ const globalForDb = globalThis as unknown as {
 
 const client = globalForDb.client ?? postgres(env().DATABASE_URL, { prepare: false });
 
-if (process.env.VERCEL_ENV !== "production") globalForDb.client = client;
+if (process.env.NODE_ENV !== "production") globalForDb.client = client;
 
 export const db = drizzle(client, {
   schema,
