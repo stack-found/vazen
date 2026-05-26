@@ -136,7 +136,7 @@ pnpm db:migrate   # apply migrations
 pnpm db:studio    # Drizzle Studio
 ```
 
-Schema docs: [`packages/db/SCHEMA.md`](../packages/db/SCHEMA.md).
+Schema change playbook: [packages/db/SCHEMA.md](https://github.com/stack-found/vazen/blob/main/packages/db/SCHEMA.md) (also in-repo at [`packages/db/SCHEMA.md`](../packages/db/SCHEMA.md)).
 
 ---
 
