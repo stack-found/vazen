@@ -432,7 +432,7 @@ importers:
         specifier: catalog:react
         version: 19.2.6(react@19.2.6)
       react-email:
-        specifier: ^6.3.0
+        specifier: ^6.3.2
         version: 6.3.2(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       zod:
         specifier: 'catalog:'
