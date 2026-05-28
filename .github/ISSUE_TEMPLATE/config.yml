@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions & ideas
+    url: https://github.com/stack-found/vazen/discussions
+    about: Ask questions or brainstorm before opening an issue
+  - name: Security vulnerability
+    url: https://github.com/stack-found/vazen/security/advisories/new
+    about: Report privately per SECURITY.md — do not file public issues with exploit details

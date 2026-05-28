@@ -1,0 +1,99 @@
+name: Bug report
+description: Something is broken or behaves incorrectly
+title: "[bug]: "
+labels: ["bug"]
+body:
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you submit
+      options:
+        - label: I searched [existing issues](https://github.com/stack-found/vazen/issues) for duplicates
+          required: true
+        - label: This is not a security report (see SECURITY.md / private advisory)
+          required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: Which part of the monorepo is affected?
+      options:
+        - apps/web
+        - apps/docs
+        - packages (shared)
+        - tooling / CI
+        - Other / unsure
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: A clear description of the bug.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. …
+        2. …
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      placeholder: e.g. release tag or git SHA
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Node, pnpm, browser, local vs production.
+      value: |
+        - Node:
+        - pnpm:
+        - Browser (if UI):
+      render: markdown
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Paste logs or stack traces (redact secrets). Formatted as a code block automatically.
+      render: shell
+
+  - type: upload
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Drag and drop images if they help explain the issue.
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting, you agree to follow our [Code of Conduct](https://github.com/stack-found/vazen/blob/main/.github/CODE_OF_CONDUCT.md).
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
