@@ -26,6 +26,6 @@
 - [ ] Branch is up to date with `dev`
 - [ ] Commits follow [Conventional Commits](https://www.conventionalcommits.org/) (`commitlint.config.ts`)
 - [ ] DB changes include migrations or documented steps (`packages/db`)
-- [ ] New env vars are in `.env.example` and [CONTRIBUTING.md](../CONTRIBUTING.md#environment-variables-reference)
+- [ ] New env vars are in `.env.example` and [CONTRIBUTING.md](./CONTRIBUTING.md#environment-variables-reference)
 - [ ] No secrets or `.env.local` committed
-- [ ] [Code of Conduct](../CODE_OF_CONDUCT.md)
+- [ ] [Code of Conduct](./CODE_OF_CONDUCT.md)
