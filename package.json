@@ -21,7 +21,7 @@
     "lint": "turbo lint",
     "typecheck": "turbo typecheck",
     "web:build": "turbo build -F web...",
-    "web:dev": "turbo dev -F web...",
+    "web:dev": "infisical run -- turbo dev -F web...",
     "web:e2e": "turbo e2e -F @e2e/web"
   },
   "devDependencies": {

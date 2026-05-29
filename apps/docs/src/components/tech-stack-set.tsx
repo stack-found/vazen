@@ -51,6 +51,10 @@ const stacks = [
     stackName: "Better Auth",
   },
   {
+    icon: <Icons.Infisical className="size-4" />,
+    stackName: "Infisical",
+  },
+  {
     icon: <Icons.ReactEmail className="size-4" />,
     stackName: "React Email",
   },
@@ -78,7 +82,7 @@ const stacks = [
 
 export default function TechStackSet() {
   return (
-    <div className="mx-auto flex max-w-[880px] flex-wrap items-center justify-center gap-4">
+    <div className="mx-auto flex max-w-[960px] flex-wrap items-center justify-center gap-4">
       {stacks.map((stack, idx) => {
         return <StackPill key={idx} icon={stack.icon} stackName={stack.stackName} />;
       })}

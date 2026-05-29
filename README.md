@@ -40,6 +40,7 @@
 - [**PostHog**](https://posthog.com/) :: Web analytics
 - [**Sentry**](https://sentry.io/) :: Error monitoring & logging
 - [**Evlog**](https://evlog.dev) :: Simple logs, wide events, and structured logging
+- [**Infisical**](https://infisical.com/) :: Centralized secrets and env injection for dev, staging, and production
 
 ## Local Development
 
@@ -52,6 +53,33 @@
 
 - `https://local.web.vazen.id`
 - `https://local.docs.vazen.id`
+
+### Environment variables
+
+> [!IMPORTANT]
+> **Agentic coding and secrets.** AI-assisted workflows can index or include workspace files in context. A `.env` with real keys may show up in model output, logs, or a shared thread. Assume secrets on disk near source are visible to tooling. Use Infisical for credentials, not long-lived env files in the repo.
+>
+> Extra steps around secrets (CLI, login, skipping local `.env` dumps) are intentional. It is always okay to overengineer security.
+
+#### What
+
+- [**Infisical**](https://infisical.com/) stores secret values per environment (`dev`, `staging`, `production`).
+- `infisical run --` (used by dev scripts) fetches the selected environment and injects vars into the process before Next/portless starts.
+- The web app uses [**t3-oss/env-nextjs**](https://env.t3.gg/) to validate env names and types at build/runtime.
+- In git: [`.infisical.json`](.infisical.json) points at the Infisical project; [`.env.example`](apps/web/.env.example) lists keys with placeholders only. `.env` and `.env.local` are gitignored.
+
+#### Why
+
+- One source of truth: change a key in Infisical, restart dev, the team gets the same value on the next run.
+- Keeps real credentials out of the clone so search and agentic coding are less likely to expose them (see callout above).
+
+#### How
+
+1. **Setup (once):** run [mise](https://mise.jdx.dev/) in the repo root · `infisical login` · leave [`.infisical.json`](.infisical.json) as committed · start web with `pnpm web:dev` (root) or `pnpm dev` in [`apps/web`](apps/web)
+2. **Daily:** use those scripts, or prefix any command with `infisical run --` · use Infisical environment **`dev`** locally (`--env=dev` if the CLI asks)
+3. **Change a secret:** Infisical dashboard · pick `dev`, `staging`, or `production` · edit the key · restart the dev server
+4. **Add a variable:** set the value in Infisical for each env that needs it · add to the web app `createEnv` schema if required · add a placeholder line to [`.env.example`](apps/web/.env.example)
+5. **Avoid:** committing `.env*` files that contain real secrets · pasting live values into issues or AI threads
 
 ### License
 

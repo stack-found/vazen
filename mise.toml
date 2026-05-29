@@ -1,0 +1,3 @@
+[tools]
+node = "24.15.0"
+infisical = "0.43.87"
