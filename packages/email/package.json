@@ -19,7 +19,7 @@
     "zod": "catalog:"
   },
   "devDependencies": {
-    "@react-email/ui": "^6.3.3",
+    "@react-email/ui": "^6.4.0",
     "@repo/tsconfig": "workspace:*",
     "@types/react": "catalog:react",
     "@types/react-dom": "catalog:react",
