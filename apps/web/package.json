@@ -6,7 +6,7 @@
   "scripts": {
     "build": "next build",
     "clean": "rimraf .next .turbo node_modules next-env.d.ts",
-    "dev": "infisical run -- portless",
+    "dev": "infisical run --env=dev --path=/vazen-web -- portless",
     "dev:app": "next dev",
     "start": "next start",
     "typecheck": "tsc --noEmit"
