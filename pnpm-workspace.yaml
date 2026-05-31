@@ -5,7 +5,7 @@ packages:
   - "e2e/*"
 
 allowBuilds:
-  '@infisical/cli': true
+  "@infisical/cli": true
   "@sentry/cli": true
   core-js: true
   esbuild: true

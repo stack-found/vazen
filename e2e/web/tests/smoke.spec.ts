@@ -7,7 +7,7 @@ test.describe("web smoke", () => {
     await expect(page).toHaveTitle(/Vazen/);
     await expect(page.getByRole("heading", { name: "Vazen" })).toBeVisible();
     await expect(
-      page.getByText("A strict monorepo starter to kickstart projects, ideas, and experiments.")
+      page.getByText("The production-grade starter kit for modern full-stack applications")
     ).toBeVisible();
     await expect(page.getByRole("button", { name: "Button" })).toBeVisible();
     await expect(page.getByText("API Health :")).toBeVisible();

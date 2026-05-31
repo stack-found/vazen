@@ -22,12 +22,12 @@ Please read our [Code of Conduct](./CODE_OF_CONDUCT.md) before participating. Se
 
 ## Prerequisites
 
-| Tool | Version / notes |
-|------|-----------------|
-| **Node.js** | `>= 22.22.3` (see root `package.json` `engines`) |
-| **pnpm** | `10.33.4` (see root `packageManager`; use [Corepack](https://nodejs.org/api/corepack.html): `corepack enable`) |
-| **Docker** | For local PostgreSQL and Redis (recommended) |
-| **Git** | With hooks via [Lefthook](https://lefthook.dev/) (installed with the repo) |
+| Tool        | Version / notes                                                                                                |
+| ----------- | -------------------------------------------------------------------------------------------------------------- |
+| **Node.js** | `>= 22.22.3` (see root `package.json` `engines`)                                                               |
+| **pnpm**    | `10.33.4` (see root `packageManager`; use [Corepack](https://nodejs.org/api/corepack.html): `corepack enable`) |
+| **Docker**  | For local PostgreSQL and Redis (recommended)                                                                   |
+| **Git**     | With hooks via [Lefthook](https://lefthook.dev/) (installed with the repo)                                     |
 
 Optional but used in this monorepo:
 
@@ -82,11 +82,11 @@ PostgreSQL and a local Upstash-compatible Redis HTTP proxy match the defaults in
 pnpm docker:up
 ```
 
-| Service | Host port | Default credentials / token |
-|---------|-----------|-----------------------------|
-| PostgreSQL | `5432` | user `postgres`, password `postgres`, database `vazen_db` |
-| Redis | `6379` | (internal to Compose) |
-| Serverless Redis HTTP | `8079` | token `vazen` |
+| Service               | Host port | Default credentials / token                               |
+| --------------------- | --------- | --------------------------------------------------------- |
+| PostgreSQL            | `5432`    | user `postgres`, password `postgres`, database `vazen_db` |
+| Redis                 | `6379`    | (internal to Compose)                                     |
+| Serverless Redis HTTP | `8079`    | token `vazen`                                             |
 
 Stop services: `pnpm docker:down`  
 Remove volumes: `pnpm docker:clean`
@@ -144,11 +144,11 @@ Schema change playbook: [packages/db/SCHEMA.md](https://github.com/stack-found/v
 
 From the repo root:
 
-| Command | What it does |
-|---------|----------------|
-| `pnpm dev` | Turbo dev for all apps/packages that define `dev` |
-| `pnpm web:dev` | Web app only |
-| `pnpm docs:dev` | Docs app only |
+| Command         | What it does                                      |
+| --------------- | ------------------------------------------------- |
+| `pnpm dev`      | Turbo dev for all apps/packages that define `dev` |
+| `pnpm web:dev`  | Web app only                                      |
+| `pnpm docs:dev` | Docs app only                                     |
 
 Local URLs (see [README](../README.md)):
 
@@ -213,41 +213,41 @@ Open pull requests against the **`dev`** branch (not `main`). `main` is reserved
 Primary template: [`apps/web/.env.example`](../apps/web/.env.example).  
 Validation: `packages/*/env.ts`.
 
-| Variable | Scope | Required locally | Description | Local default / notes |
-|----------|--------|------------------|-------------|------------------------|
-| `NODE_ENV` | Runtime | Set by tooling | `development` / `production` | Set automatically by Next.js |
-| `ANALYZE` | Build | No | Set to `true` to enable Next bundle analyzer | Empty in example |
-| `DATABASE_URL` | Server | **Yes** (web + db) | PostgreSQL connection string | `postgresql://postgres:postgres@localhost:5432/vazen_db` |
-| `UPSTASH_REDIS_REST_URL` | Server | **Yes** | Upstash REST URL (local SRH proxy in Docker) | `http://localhost:8079` |
-| `UPSTASH_REDIS_REST_TOKEN` | Server | **Yes** | Token for REST Redis | `vazen` (matches Compose `SRH_TOKEN`) |
-| `GOOGLE_CLIENT_ID` | Server | **Yes** for Google sign-in | OAuth client ID | From Google Cloud Console |
-| `GOOGLE_CLIENT_SECRET` | Server | **Yes** for Google sign-in | OAuth client secret | From Google Cloud Console |
-| `BETTER_AUTH_SECRET` | Server | Recommended | Better Auth secret | Generate a strong random string |
-| `BETTER_AUTH_API_KEY` | Server | Optional | Better Auth API key | Per Better Auth docs |
-| `STATSIG_SERVER_API_KEY` | Server | **Yes** if using flags | Statsig server key | From Statsig console |
-| `NEXT_PUBLIC_STATSIG_CLIENT_KEY` | Client | **Yes** if using flags | Statsig client key | Public; browser-exposed |
-| `FLAGS_SECRET` | Server | No | Required only for [flags precompute](https://flags-sdk.dev/docs/frameworks/next/precompute#prerequisites) | Optional in `packages/flags/env.ts` |
-| `NEXT_PUBLIC_POSTHOG_KEY` | Client | **Yes** if analytics enabled | PostHog project key | Must start with `phc_` |
-| `NEXT_PUBLIC_POSTHOG_HOST` | Client | **Yes** if analytics enabled | PostHog API host | e.g. `https://us.i.posthog.com` |
-| `NEXT_PUBLIC_SENTRY_DSN` | Client | **Yes** if Sentry enabled | Sentry DSN (URL) | From Sentry project settings |
-| `SENTRY_ORG` | Server | **Yes** for Sentry build plugin | Sentry organization slug | Build-time |
-| `SENTRY_PROJECT` | Server | **Yes** for Sentry build plugin | Sentry project slug | Build-time |
-| `NEXT_PUBLIC_SENTRY_CSP_REPORT_ENDPOINT` | Client | **Yes** if CSP reporting enabled | Sentry CSP report URL | Valid URL |
-| `R2_ACCOUNT_ID` | Server | **Yes** if using storage | Cloudflare account ID | `packages/storage` |
-| `R2_ACCESS_KEY_ID` | Server | **Yes** if using storage | R2 access key | `packages/storage` |
-| `R2_SECRET_ACCESS_KEY` | Server | **Yes** if using storage | R2 secret key | `packages/storage` |
-| `PLAYWRIGHT_PORT` | Test | No | Port for Playwright web server | Defaults to `3000` |
-| `CI` | CI | Set in CI | Enables stricter Playwright / Sentry behavior | Do not set locally unless mimicking CI |
-| `VERCEL_ENV` | Hosting | N/A locally | `production` / `preview` for flag targeting | Set on Vercel |
+| Variable                                 | Scope   | Required locally                 | Description                                                                                               | Local default / notes                                    |
+| ---------------------------------------- | ------- | -------------------------------- | --------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
+| `NODE_ENV`                               | Runtime | Set by tooling                   | `development` / `production`                                                                              | Set automatically by Next.js                             |
+| `ANALYZE`                                | Build   | No                               | Set to `true` to enable Next bundle analyzer                                                              | Empty in example                                         |
+| `DATABASE_URL`                           | Server  | **Yes** (web + db)               | PostgreSQL connection string                                                                              | `postgresql://postgres:postgres@localhost:5432/vazen_db` |
+| `UPSTASH_REDIS_REST_URL`                 | Server  | **Yes**                          | Upstash REST URL (local SRH proxy in Docker)                                                              | `http://localhost:8079`                                  |
+| `UPSTASH_REDIS_REST_TOKEN`               | Server  | **Yes**                          | Token for REST Redis                                                                                      | `vazen` (matches Compose `SRH_TOKEN`)                    |
+| `GOOGLE_CLIENT_ID`                       | Server  | **Yes** for Google sign-in       | OAuth client ID                                                                                           | From Google Cloud Console                                |
+| `GOOGLE_CLIENT_SECRET`                   | Server  | **Yes** for Google sign-in       | OAuth client secret                                                                                       | From Google Cloud Console                                |
+| `BETTER_AUTH_SECRET`                     | Server  | Recommended                      | Better Auth secret                                                                                        | Generate a strong random string                          |
+| `BETTER_AUTH_API_KEY`                    | Server  | Optional                         | Better Auth API key                                                                                       | Per Better Auth docs                                     |
+| `STATSIG_SERVER_API_KEY`                 | Server  | **Yes** if using flags           | Statsig server key                                                                                        | From Statsig console                                     |
+| `NEXT_PUBLIC_STATSIG_CLIENT_KEY`         | Client  | **Yes** if using flags           | Statsig client key                                                                                        | Public; browser-exposed                                  |
+| `FLAGS_SECRET`                           | Server  | No                               | Required only for [flags precompute](https://flags-sdk.dev/docs/frameworks/next/precompute#prerequisites) | Optional in `packages/flags/env.ts`                      |
+| `NEXT_PUBLIC_POSTHOG_KEY`                | Client  | **Yes** if analytics enabled     | PostHog project key                                                                                       | Must start with `phc_`                                   |
+| `NEXT_PUBLIC_POSTHOG_HOST`               | Client  | **Yes** if analytics enabled     | PostHog API host                                                                                          | e.g. `https://us.i.posthog.com`                          |
+| `NEXT_PUBLIC_SENTRY_DSN`                 | Client  | **Yes** if Sentry enabled        | Sentry DSN (URL)                                                                                          | From Sentry project settings                             |
+| `SENTRY_ORG`                             | Server  | **Yes** for Sentry build plugin  | Sentry organization slug                                                                                  | Build-time                                               |
+| `SENTRY_PROJECT`                         | Server  | **Yes** for Sentry build plugin  | Sentry project slug                                                                                       | Build-time                                               |
+| `NEXT_PUBLIC_SENTRY_CSP_REPORT_ENDPOINT` | Client  | **Yes** if CSP reporting enabled | Sentry CSP report URL                                                                                     | Valid URL                                                |
+| `R2_ACCOUNT_ID`                          | Server  | **Yes** if using storage         | Cloudflare account ID                                                                                     | `packages/storage`                                       |
+| `R2_ACCESS_KEY_ID`                       | Server  | **Yes** if using storage         | R2 access key                                                                                             | `packages/storage`                                       |
+| `R2_SECRET_ACCESS_KEY`                   | Server  | **Yes** if using storage         | R2 secret key                                                                                             | `packages/storage`                                       |
+| `PLAYWRIGHT_PORT`                        | Test    | No                               | Port for Playwright web server                                                                            | Defaults to `3000`                                       |
+| `CI`                                     | CI      | Set in CI                        | Enables stricter Playwright / Sentry behavior                                                             | Do not set locally unless mimicking CI                   |
+| `VERCEL_ENV`                             | Hosting | N/A locally                      | `production` / `preview` for flag targeting                                                               | Set on Vercel                                            |
 
 **Where to put files**
 
-| Path | Purpose |
-|------|---------|
-| `apps/web/.env.local` | Main Next.js app configuration |
-| `packages/db/.env` | Drizzle Kit (`db:push`, `db:migrate`, `db:studio`) |
-| `packages/redis/.env` | Redis package validation when run in isolation |
-| `packages/storage/.env` | R2 / storage package when run in isolation |
+| Path                    | Purpose                                            |
+| ----------------------- | -------------------------------------------------- |
+| `apps/web/.env.local`   | Main Next.js app configuration                     |
+| `packages/db/.env`      | Drizzle Kit (`db:push`, `db:migrate`, `db:studio`) |
+| `packages/redis/.env`   | Redis package validation when run in isolation     |
+| `packages/storage/.env` | R2 / storage package when run in isolation         |
 
 Never commit `.env.local`, `.env`, or production secrets. Use `.env.example` as the source of truth for new variables.
 
@@ -255,13 +255,13 @@ Never commit `.env.local`, `.env`, or production secrets. Use `.env.example` as 
 
 ## Monorepo layout (quick reference)
 
-| Path | Role |
-|------|------|
-| `apps/web` | Main Next.js application |
-| `apps/docs` | Documentation site (Fumadocs) |
+| Path         | Role                                           |
+| ------------ | ---------------------------------------------- |
+| `apps/web`   | Main Next.js application                       |
+| `apps/docs`  | Documentation site (Fumadocs)                  |
 | `packages/*` | Shared libraries (`@repo/db`, `@repo/auth`, …) |
-| `e2e/web` | Playwright tests for web |
-| `tooling/*` | Shared Playwright, ESLint/Oxlint, TSConfig |
+| `e2e/web`    | Playwright tests for web                       |
+| `tooling/*`  | Shared Playwright, ESLint/Oxlint, TSConfig     |
 
 ---
 
