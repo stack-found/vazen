@@ -1,11 +1,17 @@
 import { ORPCError, os } from "@orpc/server";
 import type { Context } from "./context";
+import { initLogger } from "@repo/telemetry/evlog";
+import { evlog } from "@repo/telemetry/evlog/orpc";
 
-export const o = os.$context<Context>();
+initLogger({
+  env: { service: "vazen-web" },
+  pretty: process.env.NODE_ENV !== "production",
+});
 
-export const publicProcedure = o;
+export const base = os.$context<Context>().use(evlog());
+export const publicProcedure = base;
 
-const authMiddleware = o.middleware(async ({ context, next }) => {
+export const protectedProcedure = publicProcedure.use(({ context, next }) => {
   if (!context.user) {
     throw new ORPCError("UNAUTHORIZED");
   }
@@ -18,9 +24,7 @@ const authMiddleware = o.middleware(async ({ context, next }) => {
   });
 });
 
-export const protectedProcedure = publicProcedure.use(authMiddleware);
-
-export const adminProcedure = o.use(({ context, next }) => {
+export const adminProcedure = publicProcedure.use(({ context, next }) => {
   if (!context.session || !context.user) {
     throw new ORPCError("UNAUTHORIZED");
   }

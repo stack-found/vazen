@@ -1,23 +1,21 @@
-import { onError } from "@orpc/client";
 import { RPCHandler } from "@orpc/server/fetch";
-import { createContext } from "@repo/rpc/context";
+import { type Context, createContext } from "@repo/rpc/context";
 import { appRouter } from "@repo/rpc/routers/index";
+import { withEvlog } from "@repo/telemetry/evlog/orpc";
+
+const handler = withEvlog(new RPCHandler<Context>(appRouter));
 
 async function handleRequest(request: Request) {
-  const handler = new RPCHandler(appRouter, {
-    interceptors: [
-      onError((error) => {
-        console.error(error);
-      }),
-    ],
-  });
+  const context = {
+    ...(await createContext({ headers: request.headers })),
+  } as Context;
 
-  const { response } = await handler.handle(request, {
+  const { matched, response } = await handler.handle(request, {
     prefix: "/api/rpc",
-    context: await createContext({ headers: request.headers }),
+    context,
   });
 
-  return response ?? new Response("Not found", { status: 404 });
+  return matched ? response : new Response("Not found", { status: 404 });
 }
 
 export const HEAD = handleRequest;

@@ -12,7 +12,8 @@
     "./sentry/edge": "./src/sentry/edge.config.ts",
     "./sentry/server": "./src/sentry/server.config.ts",
     "./evlog": "./src/evlog/index.ts",
-    "./evlog/next": "./src/evlog/next.ts"
+    "./evlog/next": "./src/evlog/next.ts",
+    "./evlog/orpc": "./src/evlog/orpc.ts"
   },
   "scripts": {
     "clean": "rimraf node_modules .turbo",

@@ -521,6 +521,9 @@ importers:
       '@repo/db':
         specifier: workspace:*
         version: link:../db
+      '@repo/telemetry':
+        specifier: workspace:*
+        version: link:../telemetry
       server-only:
         specifier: 'catalog:'
         version: 0.0.1
