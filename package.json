@@ -19,7 +19,7 @@
     "fallow:health": "fallow health --format human",
     "fmt": "oxfmt",
     "lint": "turbo lint",
-    "secrets:scan": "infisical scan git-changes --staged --verbose",
+    "secrets:scan": "infisical scan",
     "typecheck": "turbo typecheck",
     "web:build": "turbo build -F web...",
     "web:dev": "infisical run -- turbo dev -F web...",
