@@ -19,6 +19,7 @@
     "fallow:health": "fallow health --format human",
     "fmt": "oxfmt",
     "lint": "turbo lint",
+    "secrets:scan": "infisical scan git-changes --staged --verbose",
     "typecheck": "turbo typecheck",
     "web:build": "turbo build -F web...",
     "web:dev": "infisical run -- turbo dev -F web...",
@@ -27,6 +28,7 @@
   "devDependencies": {
     "@commitlint/cli": "^20.5.3",
     "@commitlint/config-conventional": "^20.5.3",
+    "@infisical/cli": "^0.43.89",
     "@types/node": "catalog:",
     "fallow": "^2.82.0",
     "lefthook": "^2.1.8",
