@@ -1,12 +1,9 @@
 import { ORPCError, os } from "@orpc/server";
 import type { Context } from "./context";
-import { initLogger } from "@repo/telemetry/evlog";
 import { evlog } from "@repo/telemetry/evlog/orpc";
+import { configApiLogger } from "./bootstrap/logger";
 
-initLogger({
-  env: { service: "vazen-web" },
-  pretty: process.env.NODE_ENV !== "production",
-});
+configApiLogger();
 
 export const base = os.$context<Context>().use(evlog());
 export const publicProcedure = base;
