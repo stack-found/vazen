@@ -28,15 +28,15 @@ catalog:
   zod: 4.4.3
 catalogs:
   auth:
-    "@better-auth/infra": 0.2.10
+    "@better-auth/infra": 0.2.11
     better-auth: 1.6.11
   next:
     "@next/bundle-analyzer": 16.2.6
     next: 16.2.6
   orpc:
-    "@orpc/client": 1.14.3
-    "@orpc/server": 1.14.3
-    "@orpc/tanstack-query": 1.14.3
+    "@orpc/client": 1.14.4
+    "@orpc/server": 1.14.4
+    "@orpc/tanstack-query": 1.14.4
   react:
     "@types/react": 19.2.15
     "@types/react-dom": 19.2.3
