@@ -31,7 +31,7 @@
     "@infisical/cli": "^0.43.89",
     "@types/node": "catalog:",
     "fallow": "^2.84.0",
-    "lefthook": "^2.1.8",
+    "lefthook": "^2.1.9",
     "oxfmt": "^0.52.0",
     "portless": "^0.13.1",
     "rimraf": "^6.1.3",
