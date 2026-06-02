@@ -425,6 +425,12 @@ importers:
 
   packages/email:
     dependencies:
+      '@opencoredev/email-sdk':
+        specifier: ^0.5.0
+        version: 0.5.0
+      '@repo/telemetry':
+        specifier: workspace:*
+        version: link:../telemetry
       '@t3-oss/env-nextjs':
         specifier: 'catalog:'
         version: 0.13.11(typescript@5.9.3)(zod@4.4.3)
@@ -1950,6 +1956,11 @@ packages:
     engines: {node: '>=20'}
     peerDependencies:
       next: '>=14'
+
+  '@opencoredev/email-sdk@0.5.0':
+    resolution: {integrity: sha512-rLhc/xOxyIqDPAJqpaps9BQV1+/+/W8+j6ggPzc+AjwSFR/Xc66k7o27h18Vuilpzj+ZBrLrt82UjykaZiDLxQ==}
+    engines: {bun: '>=1.1.0', node: '>=20.0.0'}
+    hasBin: true
 
   '@opentelemetry/api-logs@0.208.0':
     resolution: {integrity: sha512-CjruKY9V6NMssL/T1kAFgzosF1v9o6oeN+aX5JB/C/xPNtmgIJqcXHG7fA82Ou1zCpWGl4lROQUKwUNE1pMCyg==}
@@ -7566,6 +7577,8 @@ snapshots:
     dependencies:
       next: 16.2.6(@babel/core@7.29.0)(@opentelemetry/api@1.9.1)(@playwright/test@1.60.0)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       nosecone: 1.4.0
+
+  '@opencoredev/email-sdk@0.5.0': {}
 
   '@opentelemetry/api-logs@0.208.0':
     dependencies:
