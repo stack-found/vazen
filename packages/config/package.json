@@ -11,7 +11,7 @@
     "./seo": "./src/seo/index.ts"
   },
   "scripts": {
-    "clean": "rimraf node_modules turbo",
+    "clean": "rimraf node_modules .turbo",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
