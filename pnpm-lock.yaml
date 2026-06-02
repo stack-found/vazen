@@ -572,13 +572,13 @@ importers:
   packages/storage:
     dependencies:
       '@aws-sdk/client-s3':
-        specifier: ^3.1055.0
+        specifier: ^3.1056.0
         version: 3.1057.0
       '@aws-sdk/s3-presigned-post':
-        specifier: ^3.1055.0
+        specifier: ^3.1056.0
         version: 3.1057.0
       '@aws-sdk/s3-request-presigner':
-        specifier: ^3.1055.0
+        specifier: ^3.1056.0
         version: 3.1057.0
       '@t3-oss/env-nextjs':
         specifier: 'catalog:'
