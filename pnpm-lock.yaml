@@ -95,8 +95,8 @@ importers:
         specifier: ^20.5.3
         version: 20.5.3
       '@infisical/cli':
-        specifier: ^0.43.89
-        version: 0.43.89
+        specifier: ^0.43.90
+        version: 0.43.91
       '@types/node':
         specifier: 'catalog:'
         version: 24.12.4
@@ -274,11 +274,11 @@ importers:
   packages/ai:
     dependencies:
       '@ai-sdk/react':
-        specifier: ^3.0.195
-        version: 3.0.195(react@19.2.7)(zod@4.4.3)
+        specifier: ^3.0.196
+        version: 3.0.198(react@19.2.7)(zod@4.4.3)
       ai:
-        specifier: ^6.0.193
-        version: 6.0.193(zod@4.4.3)
+        specifier: ^6.0.194
+        version: 6.0.196(zod@4.4.3)
       react:
         specifier: catalog:react
         version: 19.2.7
@@ -585,7 +585,7 @@ importers:
         version: 0.13.11(typescript@5.9.3)(zod@4.4.3)
       files-sdk:
         specifier: ^1.6.0
-        version: 1.6.0(@aws-sdk/client-s3@3.1057.0)(@aws-sdk/s3-presigned-post@3.1057.0)(@aws-sdk/s3-request-presigner@3.1057.0)(ai@6.0.193(zod@4.4.3))(zod@4.4.3)
+        version: 1.6.0(@aws-sdk/client-s3@3.1057.0)(@aws-sdk/s3-presigned-post@3.1057.0)(@aws-sdk/s3-request-presigner@3.1057.0)(ai@6.0.196(zod@4.4.3))(zod@4.4.3)
       zod:
         specifier: 'catalog:'
         version: 4.4.3
@@ -607,7 +607,7 @@ importers:
         version: 0.13.11(typescript@5.9.3)(zod@4.4.3)
       evlog:
         specifier: ^2.18.1
-        version: 2.18.1(@orpc/server@1.14.4(@opentelemetry/api@1.9.1)(ws@8.20.1))(ai@6.0.193(zod@4.4.3))(express@5.2.1)(hono@4.12.23)(next@16.2.7(@opentelemetry/api@1.9.1)(@playwright/test@1.60.0)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react@19.2.7)
+        version: 2.18.1(@orpc/server@1.14.4(@opentelemetry/api@1.9.1)(ws@8.20.1))(ai@6.0.196(zod@4.4.3))(express@5.2.1)(hono@4.12.23)(next@16.2.7(@opentelemetry/api@1.9.1)(@playwright/test@1.60.0)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react@19.2.7)
       zod:
         specifier: 'catalog:'
         version: 4.4.3
@@ -691,8 +691,8 @@ importers:
 
 packages:
 
-  '@ai-sdk/gateway@3.0.121':
-    resolution: {integrity: sha512-uY248djJRxa5W68MHiyqO8WLdOeKQoRClGg7PVX/VPhVW8SJNM7/l5DcrA5WAM3YfQrLyNkgZa2VOu8T0t8LUw==}
+  '@ai-sdk/gateway@3.0.124':
+    resolution: {integrity: sha512-h8CrmbSG+8X0C+M/E1M4oiDHYevqwbzAPN+uLRHS0eJaatF2MZ+juNtOHXNOjk7Bsk9mD2RjYMjJO9dFkb9I7Q==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^3.25.76 || ^4.1.8
@@ -707,8 +707,8 @@ packages:
     resolution: {integrity: sha512-Q3BZ27qfpYqnCYGvE3vt+Qi6LGOF9R5Nmzn+9JoM1lCRsD9mYaIhfJLkSunN48nfGXJ6n+XNV0J/XVpqGQl7Dw==}
     engines: {node: '>=18'}
 
-  '@ai-sdk/react@3.0.195':
-    resolution: {integrity: sha512-+yIH84d4bBNzLKfaDDf4EocEH0XQKKNwNShxbrz5xAiJMNIPnWVWT9cyrSerYaGH3iNVS/g2io42PE4HNbc4RA==}
+  '@ai-sdk/react@3.0.198':
+    resolution: {integrity: sha512-ozlxMidzvKXAefvnq95Y34rJ5MipXABIv1bg2RLEnWUBxGrKxNHrYl0fTfi6grTN88wSXMZYaMY2oHMCHDFuJw==}
     engines: {node: '>=18'}
     peerDependencies:
       react: ^18 || ~19.0.1 || ~19.1.2 || ^19.2.1
@@ -1842,8 +1842,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@infisical/cli@0.43.89':
-    resolution: {integrity: sha512-OBFBNmDDJbCryp0kEEeEdvEVfqYofU2hoBLg0UOOhwn2x8JvHFD7J+RdmHS7sUjDyi8QhkiD71ZpO3ynFq9FyA==}
+  '@infisical/cli@0.43.91':
+    resolution: {integrity: sha512-x8AXrif0vm0wR9Nx4+FDsMQavHOU8kBoOV5s690vVdDypd7ZLVSqisSLbZsah1Rfdn6gsVJEZsFJlyfHaM6EQg==}
     hasBin: true
 
   '@isaacs/fs-minipass@4.0.1':
@@ -3542,8 +3542,8 @@ packages:
     resolution: {integrity: sha512-RZNwNclF7+MS/8bDg70amg32dyeZGZxiDuQmZxKLAlQjr3jGyLx+4Kkk58UO7D2QdgFIQCovuSuZESne6RG6XQ==}
     engines: {node: '>= 6.0.0'}
 
-  ai@6.0.193:
-    resolution: {integrity: sha512-VQOTOse8+X8kMtg61DNSXlYJzwOW4NjMLDJNk/qxClWsFe4oiyFJDHGGG1oezfGcFzuYuQe/8Z7r4kwiZWh2YQ==}
+  ai@6.0.196:
+    resolution: {integrity: sha512-2T45UeqKL4a11KQ14I5i1YYHOvCFrMF478E1k6PVjlQSGUvXSv4xrxIaQbUL4qgv91DADSbddwv3oR49pPAK3g==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^3.25.76 || ^4.1.8
@@ -6377,7 +6377,7 @@ packages:
 
 snapshots:
 
-  '@ai-sdk/gateway@3.0.121(zod@4.4.3)':
+  '@ai-sdk/gateway@3.0.124(zod@4.4.3)':
     dependencies:
       '@ai-sdk/provider': 3.0.10
       '@ai-sdk/provider-utils': 4.0.27(zod@4.4.3)
@@ -6395,10 +6395,10 @@ snapshots:
     dependencies:
       json-schema: 0.4.0
 
-  '@ai-sdk/react@3.0.195(react@19.2.7)(zod@4.4.3)':
+  '@ai-sdk/react@3.0.198(react@19.2.7)(zod@4.4.3)':
     dependencies:
       '@ai-sdk/provider-utils': 4.0.27(zod@4.4.3)
-      ai: 6.0.193(zod@4.4.3)
+      ai: 6.0.196(zod@4.4.3)
       react: 19.2.7
       swr: 2.4.1(react@19.2.7)
       throttleit: 2.1.0
@@ -7434,7 +7434,7 @@ snapshots:
   '@img/sharp-win32-x64@0.34.5':
     optional: true
 
-  '@infisical/cli@0.43.89':
+  '@infisical/cli@0.43.91':
     dependencies:
       tar: 7.5.15
       yauzl: 3.3.1
@@ -8952,9 +8952,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ai@6.0.193(zod@4.4.3):
+  ai@6.0.196(zod@4.4.3):
     dependencies:
-      '@ai-sdk/gateway': 3.0.121(zod@4.4.3)
+      '@ai-sdk/gateway': 3.0.124(zod@4.4.3)
       '@ai-sdk/provider': 3.0.10
       '@ai-sdk/provider-utils': 4.0.27(zod@4.4.3)
       '@opentelemetry/api': 1.9.1
@@ -9575,10 +9575,10 @@ snapshots:
       eventsource-parser: 3.0.8
     optional: true
 
-  evlog@2.18.1(@orpc/server@1.14.4(@opentelemetry/api@1.9.1)(ws@8.20.1))(ai@6.0.193(zod@4.4.3))(express@5.2.1)(hono@4.12.23)(next@16.2.7(@opentelemetry/api@1.9.1)(@playwright/test@1.60.0)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react@19.2.7):
+  evlog@2.18.1(@orpc/server@1.14.4(@opentelemetry/api@1.9.1)(ws@8.20.1))(ai@6.0.196(zod@4.4.3))(express@5.2.1)(hono@4.12.23)(next@16.2.7(@opentelemetry/api@1.9.1)(@playwright/test@1.60.0)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react@19.2.7):
     optionalDependencies:
       '@orpc/server': 1.14.4(@opentelemetry/api@1.9.1)(ws@8.20.1)
-      ai: 6.0.193(zod@4.4.3)
+      ai: 6.0.196(zod@4.4.3)
       express: 5.2.1
       hono: 4.12.23
       next: 16.2.7(@babel/core@7.29.0)(@opentelemetry/api@1.9.1)(@playwright/test@1.60.0)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
@@ -9669,7 +9669,7 @@ snapshots:
 
   fflate@0.4.8: {}
 
-  files-sdk@1.6.0(@aws-sdk/client-s3@3.1057.0)(@aws-sdk/s3-presigned-post@3.1057.0)(@aws-sdk/s3-request-presigner@3.1057.0)(ai@6.0.193(zod@4.4.3))(zod@4.4.3):
+  files-sdk@1.6.0(@aws-sdk/client-s3@3.1057.0)(@aws-sdk/s3-presigned-post@3.1057.0)(@aws-sdk/s3-request-presigner@3.1057.0)(ai@6.0.196(zod@4.4.3))(zod@4.4.3):
     dependencies:
       commander: 14.0.3
     optionalDependencies:
@@ -9677,7 +9677,7 @@ snapshots:
       '@aws-sdk/s3-presigned-post': 3.1057.0
       '@aws-sdk/s3-request-presigner': 3.1057.0
       '@modelcontextprotocol/sdk': 1.29.0(zod@4.4.3)
-      ai: 6.0.193(zod@4.4.3)
+      ai: 6.0.196(zod@4.4.3)
       zod: 4.4.3
     transitivePeerDependencies:
       - '@cfworker/json-schema'
