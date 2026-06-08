@@ -28,7 +28,7 @@ catalog:
   zod: 4.4.3
 catalogs:
   auth:
-    "@better-auth/infra": 0.2.11
+    "@better-auth/infra": 0.2.12
     better-auth: 1.6.14
   next:
     "@next/bundle-analyzer": 16.2.7
