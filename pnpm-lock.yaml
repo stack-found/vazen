@@ -476,7 +476,7 @@ importers:
         version: 0.13.11(typescript@5.9.3)(zod@4.4.3)
       flags:
         specifier: ^4.0.6
-        version: 4.0.6(@opentelemetry/api@1.9.1)(next@16.2.9(@opentelemetry/api@1.9.1)(@playwright/test@1.60.0)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        version: 4.1.0(@opentelemetry/api@1.9.1)(next@16.2.9(@opentelemetry/api@1.9.1)(@playwright/test@1.60.0)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       nanoid:
         specifier: ^5.1.11
         version: 5.1.11
@@ -585,7 +585,7 @@ importers:
         version: 0.13.11(typescript@5.9.3)(zod@4.4.3)
       files-sdk:
         specifier: ^1.7.0
-        version: 1.7.0(@aws-sdk/client-s3@3.1063.0)(@aws-sdk/s3-presigned-post@3.1063.0)(@aws-sdk/s3-request-presigner@3.1063.0)(ai@6.0.202(zod@4.4.3))(zod@4.4.3)
+        version: 1.8.0(@aws-sdk/client-s3@3.1063.0)(@aws-sdk/s3-presigned-post@3.1063.0)(@aws-sdk/s3-request-presigner@3.1063.0)(@opentelemetry/api@1.9.1)(ai@6.0.202(zod@4.4.3))(zod@4.4.3)
       zod:
         specifier: 'catalog:'
         version: 4.4.3
@@ -3790,9 +3790,9 @@ packages:
     resolution: {integrity: sha512-/rFeCpNJQbhSZjGVwO9RFV3xPqbnERS8MmIQzCtD/zl6gpJuV/bMLuN92oG3F7d8oDEHHRrujSXNUr8fpjntKw==}
     engines: {node: '>=18'}
 
-  commander@14.0.3:
-    resolution: {integrity: sha512-H+y0Jo/T1RZ9qPP4Eh1pkcQcLRglraJaSLoyOtHxu6AapkjWVCy2Sit1QQ4x3Dng8qDlSsZEet7g5Pq06MvTgw==}
-    engines: {node: '>=20'}
+  commander@15.0.0:
+    resolution: {integrity: sha512-z67u4ZhzCL/Tydu1lJARtEZYWbWaN7oYLHbsuzocr6y4N6WZAagG3RQ4FW61V1/0+jImpj293XfrcYnd1qxtPg==}
+    engines: {node: '>=22.12.0'}
 
   commander@2.20.3:
     resolution: {integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==}
@@ -4328,8 +4328,8 @@ packages:
   fflate@0.4.8:
     resolution: {integrity: sha512-FJqqoDBR00Mdj9ppamLa/Y7vxm+PRmNWA67N846RvsoYVMKB4q3y/de5PA7gUmRMYK/8CMz2GDZQmCRN1wBcWA==}
 
-  files-sdk@1.7.0:
-    resolution: {integrity: sha512-d+eLUhYHnbC+25vpZwyk1RAOuh9D7HWd2ufmWE6UbopBbM9wGeA9rIk1MHAnjUAxyulsmyiF3kcqxsXJ5I9TWg==}
+  files-sdk@1.8.0:
+    resolution: {integrity: sha512-DIncvz0GgfSTK+H36pJJpLxtZ6MdH2Mjs4Cbbder9KrNY/01JNMQlH7Xz1vEjNs88LVFEEAmK4FiiNI6+TFkvg==}
     hasBin: true
     peerDependencies:
       '@anthropic-ai/claude-agent-sdk': ^0.3.0
@@ -4346,6 +4346,7 @@ packages:
       '@microsoft/microsoft-graph-client': ^3.0.7
       '@netlify/blobs': ^10.7.4
       '@openai/agents': ^0.11.0
+      '@opentelemetry/api': ^1.9.0
       '@supabase/storage-js': ^2.105.4
       '@vercel/blob': ^2.4.0
       ai: ^6.0.0
@@ -4356,7 +4357,7 @@ packages:
       dropbox: ^10.34.0
       firebase-admin: ^13.10.0
       google-auth-library: ^10.0.0
-      node-appwrite: ^25.0.0
+      node-appwrite: ^26.0.0
       openai: ^6.0.0
       pocketbase: ^0.27.0
       ssh2-sftp-client: ^12.1.1
@@ -4390,6 +4391,8 @@ packages:
       '@netlify/blobs':
         optional: true
       '@openai/agents':
+        optional: true
+      '@opentelemetry/api':
         optional: true
       '@supabase/storage-js':
         optional: true
@@ -4432,8 +4435,8 @@ packages:
     resolution: {integrity: sha512-78/PXT1wlLLDgTzDs7sjq9hzz0vXD+zn+7wypEe4fXQxCmdmqfGsEPQxmiCSQI3ajFV91bVSsvNtrJRiW6nGng==}
     engines: {node: '>=10'}
 
-  flags@4.0.6:
-    resolution: {integrity: sha512-8Rz/5L8Gkl2+LmlV2gOXx3iJNTYDooa8eGvshFev9nrXtrcvsXa5z/DXdtElHvN15psnSHg+r51lYHge2rCASw==}
+  flags@4.1.0:
+    resolution: {integrity: sha512-vuZFkcyLHs59PQaPhSr+XplS/8Pl+W3f2myAAcS1Z8MA12laUeBSjJbh9d20CevixMaRVoifHF1c5+8hTR0zRA==}
     peerDependencies:
       '@opentelemetry/api': ^1.7.0
       '@sveltejs/kit': '*'
@@ -9121,7 +9124,7 @@ snapshots:
 
   commander@13.1.0: {}
 
-  commander@14.0.3: {}
+  commander@15.0.0: {}
 
   commander@2.20.3: {}
 
@@ -9629,14 +9632,16 @@ snapshots:
 
   fflate@0.4.8: {}
 
-  files-sdk@1.7.0(@aws-sdk/client-s3@3.1063.0)(@aws-sdk/s3-presigned-post@3.1063.0)(@aws-sdk/s3-request-presigner@3.1063.0)(ai@6.0.202(zod@4.4.3))(zod@4.4.3):
+  files-sdk@1.8.0(@aws-sdk/client-s3@3.1063.0)(@aws-sdk/s3-presigned-post@3.1063.0)(@aws-sdk/s3-request-presigner@3.1063.0)(@opentelemetry/api@1.9.1)(ai@6.0.202(zod@4.4.3))(zod@4.4.3):
     dependencies:
-      commander: 14.0.3
+      commander: 15.0.0
+      picomatch: 4.0.4
     optionalDependencies:
       '@aws-sdk/client-s3': 3.1063.0
       '@aws-sdk/s3-presigned-post': 3.1063.0
       '@aws-sdk/s3-request-presigner': 3.1063.0
       '@modelcontextprotocol/sdk': 1.29.0(zod@4.4.3)
+      '@opentelemetry/api': 1.9.1
       ai: 6.0.202(zod@4.4.3)
       zod: 4.4.3
     transitivePeerDependencies:
@@ -9660,7 +9665,7 @@ snapshots:
       locate-path: 6.0.0
       path-exists: 4.0.0
 
-  flags@4.0.6(@opentelemetry/api@1.9.1)(next@16.2.9(@opentelemetry/api@1.9.1)(@playwright/test@1.60.0)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
+  flags@4.1.0(@opentelemetry/api@1.9.1)(next@16.2.9(@opentelemetry/api@1.9.1)(@playwright/test@1.60.0)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
     dependencies:
       '@edge-runtime/cookies': 5.0.2
       jose: 5.10.0
