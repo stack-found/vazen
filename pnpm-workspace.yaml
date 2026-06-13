@@ -28,11 +28,11 @@ catalog:
   zod: 4.4.3
 catalogs:
   auth:
-    "@better-auth/infra": 0.2.13
-    better-auth: 1.6.15
+    "@better-auth/infra": 0.2.14
+    better-auth: 1.6.16
   next:
-    "@next/bundle-analyzer": 16.2.7
-    next: 16.2.7
+    "@next/bundle-analyzer": 16.2.9
+    next: 16.2.9
   orpc:
     "@orpc/client": 1.14.5
     "@orpc/server": 1.14.5
