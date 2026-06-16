@@ -30,7 +30,7 @@
     "@commitlint/config-conventional": "^20.5.3",
     "@infisical/cli": "^0.43.93",
     "@types/node": "catalog:",
-    "fallow": "^2.95.0",
+    "fallow": "^2.96.0",
     "lefthook": "^2.1.9",
     "oxfmt": "^0.54.0",
     "portless": "^0.14.0",
