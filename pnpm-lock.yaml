@@ -95,13 +95,13 @@ importers:
         specifier: ^20.5.3
         version: 20.5.3
       '@infisical/cli':
-        specifier: ^0.43.93
-        version: 0.43.93
+        specifier: ^0.43.96
+        version: 0.43.96
       '@types/node':
         specifier: 'catalog:'
         version: 24.12.4
       fallow:
-        specifier: ^2.96.0
+        specifier: ^2.97.0
         version: 2.97.0
       lefthook:
         specifier: ^2.1.9
@@ -274,11 +274,11 @@ importers:
   packages/ai:
     dependencies:
       '@ai-sdk/react':
-        specifier: ^3.0.208
-        version: 3.0.208(react@19.2.7)(zod@4.4.3)
+        specifier: ^3.0.209
+        version: 3.0.210(react@19.2.7)(zod@4.4.3)
       ai:
-        specifier: ^6.0.206
-        version: 6.0.206(zod@4.4.3)
+        specifier: ^6.0.207
+        version: 6.0.208(zod@4.4.3)
       react:
         specifier: catalog:react
         version: 19.2.7
@@ -448,8 +448,8 @@ importers:
         version: 4.4.3
     devDependencies:
       '@react-email/ui':
-        specifier: ^6.6.0
-        version: 6.6.0(@opentelemetry/api@1.9.1)(@playwright/test@1.60.0)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^6.6.3
+        version: 6.6.3(@opentelemetry/api@1.9.1)(@playwright/test@1.60.0)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@repo/tsconfig':
         specifier: workspace:*
         version: link:../../tooling/tsconfig
@@ -585,7 +585,7 @@ importers:
         version: 0.13.11(typescript@5.9.3)(zod@4.4.3)
       files-sdk:
         specifier: ^1.7.0
-        version: 1.7.0(@aws-sdk/client-s3@3.1063.0)(@aws-sdk/s3-presigned-post@3.1063.0)(@aws-sdk/s3-request-presigner@3.1063.0)(ai@6.0.206(zod@4.4.3))(zod@4.4.3)
+        version: 1.7.0(@aws-sdk/client-s3@3.1063.0)(@aws-sdk/s3-presigned-post@3.1063.0)(@aws-sdk/s3-request-presigner@3.1063.0)(ai@6.0.208(zod@4.4.3))(zod@4.4.3)
       zod:
         specifier: 'catalog:'
         version: 4.4.3
@@ -607,7 +607,7 @@ importers:
         version: 0.13.11(typescript@5.9.3)(zod@4.4.3)
       evlog:
         specifier: ^2.18.1
-        version: 2.18.1(@orpc/server@1.14.6(@opentelemetry/api@1.9.1)(ws@8.20.1))(ai@6.0.206(zod@4.4.3))(express@5.2.1)(hono@4.12.23)(next@16.2.9(@opentelemetry/api@1.9.1)(@playwright/test@1.60.0)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react@19.2.7)
+        version: 2.18.1(@orpc/server@1.14.6(@opentelemetry/api@1.9.1)(ws@8.20.1))(ai@6.0.208(zod@4.4.3))(express@5.2.1)(hono@4.12.23)(next@16.2.9(@opentelemetry/api@1.9.1)(@playwright/test@1.60.0)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react@19.2.7)
       zod:
         specifier: 'catalog:'
         version: 4.4.3
@@ -691,14 +691,14 @@ importers:
 
 packages:
 
-  '@ai-sdk/gateway@3.0.132':
-    resolution: {integrity: sha512-sFZFGk6aVSNKmgDrb14efaAbvM71AB3UUvaTsU+bvhWP9jrkRrwix/jFX8IoOAJk0/X7Xf7p3m0J2O2G6ljZbA==}
+  '@ai-sdk/gateway@3.0.133':
+    resolution: {integrity: sha512-Ebs+7iS9zUgJu5B0RlxM2JmDWzq79Cpd6YdiqcCzB5qFdpfQJPUDiXutqlQP89F2XGjOdDeidulBTXUdXWzOxw==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^3.25.76 || ^4.1.8
 
-  '@ai-sdk/provider-utils@4.0.29':
-    resolution: {integrity: sha512-uhukHaCBvqkwBHkT8C2PrnqKTCoLn3pdHXqtcR9I8ErH+flbzgW4o7VHSNIup9LRu+WBvZIZDQLsx6rwl2tiOA==}
+  '@ai-sdk/provider-utils@4.0.30':
+    resolution: {integrity: sha512-VO7I+vPffqI5sMnPoUq5DCSqKIgQIk/naJWRdQVpz2ma2zoprC/lqiJiUEl2s6DfvTD76TbhD3q39ROjlA6rGw==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^3.25.76 || ^4.1.8
@@ -707,8 +707,8 @@ packages:
     resolution: {integrity: sha512-Q3BZ27qfpYqnCYGvE3vt+Qi6LGOF9R5Nmzn+9JoM1lCRsD9mYaIhfJLkSunN48nfGXJ6n+XNV0J/XVpqGQl7Dw==}
     engines: {node: '>=18'}
 
-  '@ai-sdk/react@3.0.208':
-    resolution: {integrity: sha512-HEhPWLlg5wPqnadGqDRBek8V3GzmlLH3v4PCvDY/GCsDTNKk2nYpExvl8mXu20gVT4h+79OCAy9ozKrdTXi+4A==}
+  '@ai-sdk/react@3.0.210':
+    resolution: {integrity: sha512-VprBlyc8yvwlpIdcIICL307vRncXrLlmcRTY/7JR5ND9+LvUcxJU16yW6prClFahqEWVza8Vr8P4Bgk5ZBtp4A==}
     engines: {node: '>=18'}
     peerDependencies:
       react: ^18 || ~19.0.1 || ~19.1.2 || ^19.2.1
@@ -1826,8 +1826,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@infisical/cli@0.43.93':
-    resolution: {integrity: sha512-xiq3OG37xTLrqm6twcguC4O+NonhmdG30wmh25LESBs+6hFTWn4dGi8GBb8Vb6tpWA/NaWFEJY+HXHM819jw3w==}
+  '@infisical/cli@0.43.96':
+    resolution: {integrity: sha512-b4pSm/Nij4Fx9MrR3ku3iUuKgN44a4/IN8J5pB3Q9xJ5UywHqB8sGbMT8vutUIeM6xLDYx76BZlhxjAL0WUGwA==}
     hasBin: true
 
   '@isaacs/fs-minipass@4.0.1':
@@ -2758,8 +2758,8 @@ packages:
       react: ^18.0 || ^19.0 || ^19.0.0-rc
       react-dom: ^18.0 || ^19.0 || ^19.0.0-rc
 
-  '@react-email/ui@6.6.0':
-    resolution: {integrity: sha512-PCAUtbN9WQEb5mC71xTtgXQFXOKyit6UpuRhzAw8h8O3WBTtkTfvFwZHHXqThvVfissm6TtiGCNY/9WdNziQ8w==}
+  '@react-email/ui@6.6.3':
+    resolution: {integrity: sha512-rGmMv2usj1REJqrTsg2VLnnUsV8/qI4AxaK9AMD81BbaNsJV8K0StHy0B03XHdrTuhxAjIg5wFD4LCd2me/qdg==}
 
   '@rescale/nemo@2.2.0':
     resolution: {integrity: sha512-AetzvHmtJ8Q0U1SEpBmWgCZfQZgBfr++Ok0AUMHGJVdaU1w+OB1/x/PMoskulL5xrnFLRdUlmMBhYl+JTgZMjA==}
@@ -3530,8 +3530,8 @@ packages:
     resolution: {integrity: sha512-RZNwNclF7+MS/8bDg70amg32dyeZGZxiDuQmZxKLAlQjr3jGyLx+4Kkk58UO7D2QdgFIQCovuSuZESne6RG6XQ==}
     engines: {node: '>= 6.0.0'}
 
-  ai@6.0.206:
-    resolution: {integrity: sha512-hVdB5PozMMxmkPBfbCxkFOn0eVeCMi/imkfPvk65cxL4O8oIrvjUxDUX8dGkdkWG1No+R7e7D9ti2DHO61Z4YQ==}
+  ai@6.0.208:
+    resolution: {integrity: sha512-STz+AaZqJ4ZjH7UkpXkbHx+bjgIDOsE8fIUoZjkZ2whoZcfVmG9K/TqEKouJZ03SuZuD7lagntlU3zBhAEkRpQ==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^3.25.76 || ^4.1.8
@@ -6369,14 +6369,14 @@ packages:
 
 snapshots:
 
-  '@ai-sdk/gateway@3.0.132(zod@4.4.3)':
+  '@ai-sdk/gateway@3.0.133(zod@4.4.3)':
     dependencies:
       '@ai-sdk/provider': 3.0.10
-      '@ai-sdk/provider-utils': 4.0.29(zod@4.4.3)
+      '@ai-sdk/provider-utils': 4.0.30(zod@4.4.3)
       '@vercel/oidc': 3.2.0
       zod: 4.4.3
 
-  '@ai-sdk/provider-utils@4.0.29(zod@4.4.3)':
+  '@ai-sdk/provider-utils@4.0.30(zod@4.4.3)':
     dependencies:
       '@ai-sdk/provider': 3.0.10
       '@standard-schema/spec': 1.1.0
@@ -6387,10 +6387,10 @@ snapshots:
     dependencies:
       json-schema: 0.4.0
 
-  '@ai-sdk/react@3.0.208(react@19.2.7)(zod@4.4.3)':
+  '@ai-sdk/react@3.0.210(react@19.2.7)(zod@4.4.3)':
     dependencies:
-      '@ai-sdk/provider-utils': 4.0.29(zod@4.4.3)
-      ai: 6.0.206(zod@4.4.3)
+      '@ai-sdk/provider-utils': 4.0.30(zod@4.4.3)
+      ai: 6.0.208(zod@4.4.3)
       react: 19.2.7
       swr: 2.4.1(react@19.2.7)
       throttleit: 2.1.0
@@ -7393,7 +7393,7 @@ snapshots:
   '@img/sharp-win32-x64@0.34.5':
     optional: true
 
-  '@infisical/cli@0.43.93':
+  '@infisical/cli@0.43.96':
     dependencies:
       tar: 7.5.15
       yauzl: 3.3.1
@@ -8194,7 +8194,7 @@ snapshots:
       react: 19.2.7
       react-dom: 19.2.7(react@19.2.7)
 
-  '@react-email/ui@6.6.0(@opentelemetry/api@1.9.1)(@playwright/test@1.60.0)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
+  '@react-email/ui@6.6.3(@opentelemetry/api@1.9.1)(@playwright/test@1.60.0)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
     dependencies:
       esbuild: 0.28.0
       next: 16.2.6(@opentelemetry/api@1.9.1)(@playwright/test@1.60.0)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
@@ -8916,11 +8916,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ai@6.0.206(zod@4.4.3):
+  ai@6.0.208(zod@4.4.3):
     dependencies:
-      '@ai-sdk/gateway': 3.0.132(zod@4.4.3)
+      '@ai-sdk/gateway': 3.0.133(zod@4.4.3)
       '@ai-sdk/provider': 3.0.10
-      '@ai-sdk/provider-utils': 4.0.29(zod@4.4.3)
+      '@ai-sdk/provider-utils': 4.0.30(zod@4.4.3)
       '@opentelemetry/api': 1.9.1
       zod: 4.4.3
 
@@ -9544,10 +9544,10 @@ snapshots:
       eventsource-parser: 3.0.8
     optional: true
 
-  evlog@2.18.1(@orpc/server@1.14.6(@opentelemetry/api@1.9.1)(ws@8.20.1))(ai@6.0.206(zod@4.4.3))(express@5.2.1)(hono@4.12.23)(next@16.2.9(@opentelemetry/api@1.9.1)(@playwright/test@1.60.0)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react@19.2.7):
+  evlog@2.18.1(@orpc/server@1.14.6(@opentelemetry/api@1.9.1)(ws@8.20.1))(ai@6.0.208(zod@4.4.3))(express@5.2.1)(hono@4.12.23)(next@16.2.9(@opentelemetry/api@1.9.1)(@playwright/test@1.60.0)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react@19.2.7):
     optionalDependencies:
       '@orpc/server': 1.14.6(@opentelemetry/api@1.9.1)(ws@8.20.1)
-      ai: 6.0.206(zod@4.4.3)
+      ai: 6.0.208(zod@4.4.3)
       express: 5.2.1
       hono: 4.12.23
       next: 16.2.9(@babel/core@7.29.0)(@opentelemetry/api@1.9.1)(@playwright/test@1.60.0)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
@@ -9638,7 +9638,7 @@ snapshots:
 
   fflate@0.4.8: {}
 
-  files-sdk@1.7.0(@aws-sdk/client-s3@3.1063.0)(@aws-sdk/s3-presigned-post@3.1063.0)(@aws-sdk/s3-request-presigner@3.1063.0)(ai@6.0.206(zod@4.4.3))(zod@4.4.3):
+  files-sdk@1.7.0(@aws-sdk/client-s3@3.1063.0)(@aws-sdk/s3-presigned-post@3.1063.0)(@aws-sdk/s3-request-presigner@3.1063.0)(ai@6.0.208(zod@4.4.3))(zod@4.4.3):
     dependencies:
       commander: 14.0.3
     optionalDependencies:
@@ -9646,7 +9646,7 @@ snapshots:
       '@aws-sdk/s3-presigned-post': 3.1063.0
       '@aws-sdk/s3-request-presigner': 3.1063.0
       '@modelcontextprotocol/sdk': 1.29.0(zod@4.4.3)
-      ai: 6.0.206(zod@4.4.3)
+      ai: 6.0.208(zod@4.4.3)
       zod: 4.4.3
     transitivePeerDependencies:
       - '@cfworker/json-schema'
