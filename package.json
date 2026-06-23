@@ -39,7 +39,7 @@
     "typescript": "catalog:"
   },
   "engines": {
-    "node": ">=22.22.3"
+    "node": ">=22.23.1"
   },
   "packageManager": "pnpm@10.34.4"
 }
