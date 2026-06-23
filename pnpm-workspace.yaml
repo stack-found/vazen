@@ -15,7 +15,7 @@ allowBuilds:
   sharp: true
 
 catalog:
-  "@playwright/test": ^1.60.0
+  "@playwright/test": ^1.61.1
   "@sentry/nextjs": 10.56.0
   "@t3-oss/env-nextjs": ^0.13.11
   "@tailwindcss/postcss": ^4.3.1
