@@ -22,7 +22,7 @@
     "drizzle-orm": "catalog:",
     "postgres": "^3.4.9",
     "server-only": "catalog:",
-    "uuid": "^14.0.0",
+    "uuid": "^14.0.1",
     "zod": "catalog:"
   },
   "devDependencies": {
