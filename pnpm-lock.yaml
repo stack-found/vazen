@@ -14,7 +14,7 @@ catalogs:
       version: 1.6.20
   default:
     '@playwright/test':
-      specifier: ^1.60.0
+      specifier: ^1.61.1
       version: 1.61.1
     '@sentry/nextjs':
       specifier: 10.56.0
@@ -26,7 +26,7 @@ catalogs:
       specifier: ^4.3.1
       version: 4.3.1
     '@types/node':
-      specifier: ^24.12.4
+      specifier: ^24.13.2
       version: 24.13.2
     drizzle-orm:
       specifier: 0.45.2
@@ -78,10 +78,10 @@ catalogs:
       version: 19.2.7
   tanstack:
     '@tanstack/react-query':
-      specifier: ^5.101.0
+      specifier: ^5.101.1
       version: 5.101.1
     '@tanstack/react-query-devtools':
-      specifier: ^5.101.0
+      specifier: ^5.101.1
       version: 5.101.1
 
 importers:
@@ -95,13 +95,13 @@ importers:
         specifier: ^20.5.3
         version: 20.5.3
       '@infisical/cli':
-        specifier: ^0.43.96
+        specifier: ^0.43.97
         version: 0.43.97
       '@types/node':
         specifier: 'catalog:'
         version: 24.13.2
       fallow:
-        specifier: ^2.101.0
+        specifier: ^2.102.0
         version: 2.102.0
       lefthook:
         specifier: ^2.1.9
@@ -134,7 +134,7 @@ importers:
         specifier: 16.9.3
         version: 16.9.3(@tailwindcss/oxide@4.3.1)(@types/mdx@2.0.14)(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(fumadocs-core@16.9.3(@mdx-js/mdx@3.1.1)(@types/estree-jsx@1.0.5)(@types/hast@3.0.4)(@types/mdast@4.0.4)(@types/react@19.2.17)(lucide-react@1.21.0(react@19.2.7))(next@16.2.9(@opentelemetry/api@1.9.1)(@playwright/test@1.61.1)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(zod@4.4.3))(next@16.2.9(@opentelemetry/api@1.9.1)(@playwright/test@1.61.1)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(tailwindcss@4.3.1)
       lucide-react:
-        specifier: ^1.17.0
+        specifier: ^1.21.0
         version: 1.21.0(react@19.2.7)
       motion:
         specifier: 'catalog:'
@@ -274,10 +274,10 @@ importers:
   packages/ai:
     dependencies:
       '@ai-sdk/react':
-        specifier: ^3.0.210
+        specifier: ^3.0.211
         version: 3.0.211(react@19.2.7)(zod@4.4.3)
       ai:
-        specifier: ^6.0.208
+        specifier: ^6.0.209
         version: 6.0.209(zod@4.4.3)
       react:
         specifier: catalog:react
@@ -308,7 +308,7 @@ importers:
         specifier: 'catalog:'
         version: 0.13.11(typescript@5.9.3)(zod@4.4.3)
       posthog-js:
-        specifier: ^1.382.0
+        specifier: ^1.391.2
         version: 1.393.0
       zod:
         specifier: 'catalog:'
@@ -441,14 +441,14 @@ importers:
         specifier: catalog:react
         version: 19.2.7(react@19.2.7)
       react-email:
-        specifier: ^6.5.0
+        specifier: ^6.6.3
         version: 6.6.4(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       zod:
         specifier: 'catalog:'
         version: 4.4.3
     devDependencies:
       '@react-email/ui':
-        specifier: ^6.6.3
+        specifier: ^6.6.4
         version: 6.6.4(@opentelemetry/api@1.9.1)(@playwright/test@1.61.1)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@repo/tsconfig':
         specifier: workspace:*
@@ -475,7 +475,7 @@ importers:
         specifier: 'catalog:'
         version: 0.13.11(typescript@5.9.3)(zod@4.4.3)
       flags:
-        specifier: ^4.0.6
+        specifier: ^4.2.0
         version: 4.2.0(@opentelemetry/api@1.9.1)(next@16.2.9(@opentelemetry/api@1.9.1)(@playwright/test@1.61.1)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       nanoid:
         specifier: ^5.1.15
@@ -572,19 +572,19 @@ importers:
   packages/storage:
     dependencies:
       '@aws-sdk/client-s3':
-        specifier: ^3.1063.0
+        specifier: ^3.1073.0
         version: 3.1075.0
       '@aws-sdk/s3-presigned-post':
-        specifier: ^3.1063.0
+        specifier: ^3.1073.0
         version: 3.1075.0
       '@aws-sdk/s3-request-presigner':
-        specifier: ^3.1063.0
+        specifier: ^3.1073.0
         version: 3.1075.0
       '@t3-oss/env-nextjs':
         specifier: 'catalog:'
         version: 0.13.11(typescript@5.9.3)(zod@4.4.3)
       files-sdk:
-        specifier: ^1.7.0
+        specifier: ^1.9.0
         version: 1.9.0(@aws-sdk/client-s3@3.1075.0)(@aws-sdk/s3-presigned-post@3.1075.0)(@aws-sdk/s3-request-presigner@3.1075.0)(@opentelemetry/api@1.9.1)(ai@6.0.209(zod@4.4.3))(zod@4.4.3)
       zod:
         specifier: 'catalog:'
@@ -606,7 +606,7 @@ importers:
         specifier: 'catalog:'
         version: 0.13.11(typescript@5.9.3)(zod@4.4.3)
       evlog:
-        specifier: ^2.18.1
+        specifier: ^2.19.1
         version: 2.19.2(@orpc/server@1.14.6(@opentelemetry/api@1.9.1)(ws@8.21.0))(ai@6.0.209(zod@4.4.3))(express@5.2.1)(hono@4.12.27)(next@16.2.9(@opentelemetry/api@1.9.1)(@playwright/test@1.61.1)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react@19.2.7)
       zod:
         specifier: 'catalog:'
@@ -622,7 +622,7 @@ importers:
   packages/ui:
     dependencies:
       '@base-ui/react':
-        specifier: ^1.5.0
+        specifier: ^1.6.0
         version: 1.6.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       class-variance-authority:
         specifier: ^0.7.1
@@ -671,7 +671,7 @@ importers:
   tooling/oxlint:
     devDependencies:
       oxlint:
-        specifier: ^1.70.0
+        specifier: ^1.71.0
         version: 1.71.0(oxlint-tsgolint@0.23.0)
       oxlint-tsgolint:
         specifier: ^0.23.0
