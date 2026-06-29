@@ -28,7 +28,7 @@
   "devDependencies": {
     "@commitlint/cli": "^20.5.3",
     "@commitlint/config-conventional": "^20.5.3",
-    "@infisical/cli": "^0.43.97",
+    "@infisical/cli": "^0.43.98",
     "@types/node": "catalog:",
     "fallow": "^2.102.0",
     "lefthook": "^2.1.9",
