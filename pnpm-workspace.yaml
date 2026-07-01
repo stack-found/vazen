@@ -43,5 +43,5 @@ catalogs:
     react: 19.2.7
     "react-dom": 19.2.7
   tanstack:
-    "@tanstack/react-query": ^5.101.1
-    "@tanstack/react-query-devtools": ^5.101.1
+    "@tanstack/react-query": ^5.101.2
+    "@tanstack/react-query-devtools": ^5.101.2
