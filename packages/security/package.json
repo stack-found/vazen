@@ -11,7 +11,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@nosecone/next": "1.4.0",
+    "@nosecone/next": "1.5.0",
     "@t3-oss/env-nextjs": "catalog:",
     "zod": "catalog:"
   },
