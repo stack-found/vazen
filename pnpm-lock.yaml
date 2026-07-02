@@ -308,7 +308,7 @@ importers:
         specifier: 'catalog:'
         version: 0.13.11(typescript@5.9.3)(zod@4.4.3)
       posthog-js:
-        specifier: ^1.393.6
+        specifier: ^1.395.0
         version: 1.396.2
       zod:
         specifier: 'catalog:'
