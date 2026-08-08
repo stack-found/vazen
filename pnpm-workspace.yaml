@@ -31,8 +31,8 @@ catalogs:
     "@better-auth/infra": 0.3.7
     better-auth: 1.6.26
   next:
-    "@next/bundle-analyzer": 16.2.12
-    next: 16.2.12
+    "@next/bundle-analyzer": 16.3.0
+    next: 16.3.0
   orpc:
     "@orpc/client": 1.14.14
     "@orpc/server": 1.14.14
